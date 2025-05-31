@@ -1,0 +1,1234 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Head</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css"> 
+	<link rel="stylesheet" type="text/css" href="assets/efluidmenu.css" />
+ <!-- beginning of carousel-->
+
+  
+  
+  
+  <!--   beginning of top menu-->
+       
+
+<!--[if lte IE 8]>-->
+<style type="text/css">
+
+.efluidmenu > ul{
+			margin-left: 55px;
+}
+
+.efluidmenu > ul li#search{
+			display: none;
+}
+
+	.efluidmenu #sitelogo {
+	    left: 0;  /* position logo to the very left of menu in IE8 and below */
+	}
+	
+	.efluidmenu #sitelogo a {
+	    left: auto;
+	}
+
+</style>   
+<!--[endif]-->
+
+<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="assets/efluidmenu.js">
+
+/***********************************************
+* http://www.dynamicdrive.com/dynamicindex1/efluidmenu/index.html eFluid Menu script (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+</script>
+
+
+<!--  end of top menu -->
+
+
+<!-- -->
+<!-- slide show begins -->
+	<link rel="stylesheet" type="text/css" href="smooth_slider.css">
+
+	<style>
+	
+	.slideshowwrapper{ /* dimensions of outermost slideshow container */
+		width: 100%;
+		height: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	</style>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery-slider.js">
+
+		/***********************************************
+		* Full Page Slideshow- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* Please keep this notice intact
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+
+	</script>
+	<script>
+		$(function() {
+			$('#resume').on('click', function(){ // set up resume button behavior
+				$("#pan_area").smoothslider("resume") // resume playing of this slideshow. Pass in "pause" to pause it instead
+				$(this).hide() // hide resume button
+			})
+		
+		
+			$("#pan_area").smoothslider("install", {
+				"playlist_url":"playlist.json", // get the playlist and some config from the server
+
+				// this function gets called whenever there's an image change
+				"on_image_change":function(caption, image_url) { 
+						var area= $("#img_msg_area").find("span");
+						area.animate({"opacity": 0}, 500, "swing", function() {
+							area.text(caption);
+							area.animate({"opacity": 1}, 500); // fade in & out take 500ms each
+						});
+					},
+				"loops": 2, // number of loops before stopping. Remove thisoption to run continuously
+				"throbber":$("#throbber"), // an image to show when waiting for images to load
+				on_pause:function(){
+					$('#resume').show()
+				}
+
+			});
+		});
+
+	</script>
+
+<!-- slide show ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- new menu bar-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />
+
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+
+<!-- end of new menu bar-->
+
+
+
+
+
+
+  </head>
+  
+  <body>
+<!-- new menu bar-->
+<!--<h3>All Levels Navigtional Menu: Top Menu Bar Example</h3>-->
+
+<!-- new menu bar-->
+<!--<h3>All Levels Navigtional Menu: Top Menu Bar Example</h3>-->
+
+<!--<div id="ddtopmenubar" class="mattblackmenu">-->
+<div id="ddtopmenubar" class="mattblackmenu">
+<ul>
+
+
+<li><a href="index-2.html">Home</a></li>
+<li><a href="#" rel="ddsubmenu1">About</a></li>
+<li><a href="#" rel="ddsubmenu2">Administration</a></li>
+<!--<li><a href="#" rel="ddsubmenu3">Events</a></li>-->
+<li><a href="#" rel="ddsubmenu4">Student Corner</a></li>
+
+
+<li><a href="#" rel="ddsubmenu5">School Fee</a></li>
+<li><a href="#" rel="ddsubmenu6">Admission</a></li>
+<li><a href="#" rel="ddsubmenu7">Visitor Corner</a></li>
+<li><a href="#" rel="ddsubmenu8">Current Tenders</a></li>
+
+
+
+<li><a href="#" rel="ddsubmenu9">Press Release</a></li>
+<li><a href="#" rel="ddsubmenu10">TC</a></li>
+
+
+
+
+
+
+</ul>
+</div>
+
+<a class="animateddrawer" id="ddtopmenubar-mobiletoggle" href="#">
+<span></span>
+</a>
+
+<script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar","topbar") 
+//ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+
+<!--<p style="margin-top: 2em">More info/ documentation: <a href="http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/">All Levels Navigational Menu</a></p>-->
+
+
+<!--HTML for the Drop Down Menus associated with Top Menu Bar-->
+<!--They should be inserted OUTSIDE any element other than the BODY tag itself-->
+<!--A good location would be the end of the page (right above "</BODY>")-->
+
+<!--Top Drop Down Menu 1 HTML-->
+
+
+<ul id="ddsubmenu1" class="ddsubmenustyle">
+<li><a href="webinnerpg/CBSE%20Circular.html" target="_blank">Mandatory Public Disclosure</a></li>
+
+								<li><a href="history.html">History</a></li>
+								<li><a href="boardofgovernors.html">Board of Governors</a></li>
+								
+								<li><a href="missionandvision.html">Mission & Vision</a></li>
+								<li><a href="schoolmoto.html">School Moto</a></li>
+								<li><a href="schoolsong.html">School Song</a></li>
+
+								<li><a href="destination.html">Destination</a></li>
+								
+								<li><a href="pcpomessage.html">Message from PCPO</a></li>
+								
+								<li><a href="nrwworole.html">NRWWORole</a></li>
+</ul>
+
+
+<!--Top Drop Down Menu 2 HTML-->
+
+<ul id="ddsubmenu2" class="ddsubmenustyle">
+
+<li><a href="head.html">The Head</a></li>
+								<li><a href="exprincipals.html">Ex-Principals</a></li>
+								
+								<li><a href="teachingstaff.html">Teaching Staff</a></li>
+								<li><a href="nonteachingstaff.html">Non Teaching Staff</a></li>
+   							    <li><a href="https://nr.indianrailways.gov.in/" target="_blank">Northern Railways</a></li>		
+
+
+
+</ul>
+
+<!--Top Drop Down Menu 3 HTML-->
+<!--
+<ul id="ddsubmenu3" class="ddsubmenustyle">
+
+<li><a href="news.php">News</a></li>
+								
+								
+								
+								<li><a href="creativecorner/gallery.html">Photo Gallery</a></li>
+								<li><a href="creativecorner/celeberations.html">Celebrations</a></li>
+								<li><a href="mosaic.php">Mosaic</a></li>
+								
+								<li><a href="awardandtrophies.pdf" target="_blank">Awards & Trophies</a></li>
+								<li><a href="honourboardandotherprizes.pdf" target="_blank">Honour Board & other Prizes</a></li>
+
+
+
+
+
+</ul>
+
+-->
+
+
+<ul id="ddsubmenu4" class="ddsubmenustyle">
+
+<li><a href="Final_Calendar%202025-26%20OGS-1.pdf" target="_blank">School Calendar (2025-26)</a></li>
+
+							<li><a href="formsam2/stuprofile.html">Student Profile & Result</a></li>
+
+							
+							
+                                <li><a href="studentslist2024-2025.pdf" target="_blank">Current Student list</a></li>
+
+								<li><a href="rule1.pdf" target="_blank">Discipline Rules</a></li>
+
+								<li><a href="kitlistogs.pdf" target="_blank">Student Kit List 2025-26</a></li>
+
+
+
+								<li><a href="honourboardandotherprizes.pdf" target="_blank">Awards & Trophies</a></li>
+								<li><a href="alumni.html">Alumni Corner</a></li>
+								<li><a href="railempcert.jpg" target="_blank">Proforma for Railway Employee Certificate</a></li>
+
+								
+
+								
+								<li><a href="immunizationandrecordform.pdf" target="_blank">Proforma of Record Form-cum-Immunization Schedule</a></li>
+
+
+
+</ul>
+
+
+
+
+<ul id="ddsubmenu5" class="ddsubmenustyle">
+	
+								
+								<li><a href="FeeStructurePaymentInstructions.pdf" target="_blank">Fee Structure and Payment Instructions</a></li>
+														
+								
+
+								
+								<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Pay Fee Online (SBCollect)</a></li>
+
+
+
+
+<!--							    <li><a href="FeeRevisionNotice(2021-2022).pdf" target="_blank">Revision of Fee for Session 2021-22</a></li>-->
+
+
+</ul>
+
+
+
+
+
+<ul id="ddsubmenu6" class="ddsubmenustyle">
+
+
+
+
+
+
+
+	<!--
+<li><a href="FINAL_RESULT_FOR_ADMISSION_TO_CLASS_XI_IN_OAK_GROVE_SCHOOL_FOR_SESSION_2023-24.pdf" target="_blank">FINAL RESULT FOR ADMISSION TO CLASS XI IN OAK GROVE SCHOOL FOR SESSION 2023-24</a></li>-->
+
+<!--<li><a href="final_result.pdf" target="_blank">Final Result of General Manager Quota for Admission in Oak Grove School for Session 2023-2024</a></li>
+ 
+
+<li><a href="FINAL_RESULT_OF_OTHER_CLASSES_PDF_Signed.pdf" target="_blank">Final Result for Admission to Classes IV to IX in Oak Grove School for Session 2023-2024
+</a></li>
+ 
+
+<li><a href="FINAL_RESULT_OF_CLASSIIIPDF_Signed.pdf" target="_blank">Final Result for Admission to Class III in Oak Grove School for Session 2023-2024
+FOR THE SESSION 2023-24</a></li>
+
+
+<li><a href="Adobe_Scan_13_Mar_2023.pdf" target="_blank">Supplementary Result of written test for admission to class 9 SESSION 2023-2024</a></li>
+
+
+<li><a href="RESULT_OF_OGS_ADMISSION_TEST_HELD_ON_29-01-23.pdf" target="_blank">Result of written test for admission to class 3 to 9 (Session 2023-24)</a></li>-->
+
+<li><a href="Information_Brochure.pdf" target="_blank">Information Brochure</a></li>
+<!--<li><a href="ADMISSION_NOTICE_FOR_CLASS-XI_(SESSION_2023-24).pdf" target="_blank">Admission Notification for class 11 (Session 2023-24)</a></li>-->
+
+
+
+<!--<li><a href="GM_Quota_Final_Signed.pdf" target="_blank">List of Selected Candidates against GM Quota for class XI  Academic Session 2022-23 </a></li>-->
+
+
+						
+<!--						<li><a href="Final Result_Signed.pdf" target="_blank">Final Result of Class XI Admission Session 2022-23</a></li>-->
+						
+						
+						
+						
+<!--					<li><a href="ADMISSION NOTICE CLASS XI FOR SESSION 2022-2023.pdf" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>-->
+
+
+
+
+
+
+
+
+								
+								
+							<!--	<li><a href="ClassIII2022-2023EXAMPAPER.pdf" target="_blank">Class III 2022-2023 Exam Paper</a></li>
+								
+								
+								<li><a href="Questionpaper.pdf" target="_blank">Question paper of class III for session 2021</a></li>
+
+
+								<li><a href="download.php" target="_blank">Old Question Paper</a></li>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!--<li><a href="Final Result_Signed.pdf" target="_blank">Final Result of Class XI Admission Session 2022-23</a></li>
+
+<li><a href="ADMISSION NOTICE CLASS XI FOR SESSION 2022-2023.pdf" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>
+-->
+
+
+
+
+
+
+
+
+<!--<li><a href="formsam2/index.php">Part-I Application Form</a></li>-->
+
+
+<!--<li><a href="formsam2/index.php">Part-I Application Form</a></li>-->
+<!--<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Part-II Make Payment</a></li>
+<li><a href="formsam2/paymentdet.php">Part-III Enter Payment Details</a></li>-->
+<!--<li><a href="formsam2/regstat.php">Check Application Status</a></li>
+							
+<!--<li><a href="formsam2/downloadadmitcard.php">Download Admit Card</a></li>-->
+
+<!--use this link 22 sept 2024<li><a href="formsam2/regstat1.php">Download Admit Card</a></li>-->
+<!--<li><a href="FinalListofCandidates.pdf" target="_blank">Final List of candidates appearing in the admission entrance exam(2023-24) to be held on 29-01-2023</a></li>-->
+
+
+
+
+
+<li><a href="download.html">Download Entrance Exam Question Papers</a></li>
+
+
+<!--<li><a href="#" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>
+
+						
+						
+			<li><a href="Notice No. 13_2022_Signed.pdf" target="_blank">Final Revision of Fee for the class 3 to 9 for Session 2021-22</font></a></li>
+						
+						<li><a href="CLASS 3 ADMISSION TEST NOTICE NO.8 2022.pdf" target="_blank">
+Announcement of Date of Entrance Examination Class 3rd Session 2022-2023</font></a></li>
+						<li><a href="List of Candidates for Entrance Exam Class III (Session 2022-2023).pdf" target="_blank">List of Candidates for Entrance Exam Class III (Session 2022-2023)</a></li>-->
+						
+						
+						
+						
+			<!--<li><a href="FINALresult4to9.pdf" target="_blank">Final Result of other Classes IV to IX for admission in Oak Grove School Jharipani for Session 2021-22</a></li>
+
+						
+<li><a href="FINALRESULT.pdf" target="_blank">Final Result of Class III for Admission in OAK GROVE SCHOOL JHARIPANI for the Session  2021-22</a></li>-->
+	
+<!-- THIS IS FINAL--> 
+<!--<li><a href="formsam2/index.php">Part-I Application Form</a></li>-->
+
+<!--<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Part-II Make Payment</a></li>
+
+<li><a href="formsam2/paymentdet.php">Part-III Enter Payment Details</a></li>-->
+<li><a href="formsam2/regstat.html">Check Application Status</a></li>
+							
+							
+	
+							
+							
+							
+<!--							
+<!--<li><a href="#">Download Entrance Exam Admit Card</a></li>
+
+<li><a href="#">Part-I Application Form</a></li>
+
+				<li><a href="#">Part-II Make Payment</a></li>
+				<li><a href="#">Part-III Enter Payment Details</a></li>
+							<li><a href="#">Check Application Status</a></li>-->
+<!-- as on 1st march 2025--> <li><a href="formsam2/regstat1.html">Download Entrance Exam Admit Card</a></li>
+
+
+
+
+
+
+
+
+
+
+								
+<!--<li><a href="#" target="_blank">Entrance Exam Question Papers</a></li>
+<li><a href="#" target="_blank">Class III 2022-2023 Exam Paper</a></li>
+<li><a href="#" target="_blank">Question paper of class III for session 2021</a></li>-->
+		
+
+
+								
+
+
+<!--<li><a href="#">Item 1b</a></li>
+<li><a href="#">Item 2b</a></li>
+<li><a href="#">Item Folder 3b</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1b</a></li>
+  <li><a href="#">Sub Item 3.2b</a></li>
+  <li><a href="#">Sub Item 3.3b</a></li>
+  <li><a href="#">Sub Item 3.4b</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4b</a></li>
+<li><a href="#">Item Folder 5b</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1b</a></li>
+  <li><a href="#">Item Folder 5.2b</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1b</a></li>
+    <li><a href="#">Sub Item 5.2.2b</a></li>
+    <li><a href="#">Sub Item 5.2.3b</a></li>
+    </ul>
+  </li>
+	</ul>
+</li>
+<li><a href="#">Item 6b</a></li>-->
+</ul>
+
+
+<ul id="ddsubmenu7" class="ddsubmenustyle">
+<li><a href="howtoreach.html">How to reach</a></li>
+								<!--<li><a href="vacancy.php">Vacancy</a></li>-->
+								
+								<li><a href="contact.html">Contact/Feedback</a></li>
+								<li><a href="otherdownloads.html">Other Downloads</a></li>
+
+								
+<!--								<li><a href="download.php">Download</a></li>-->
+								
+
+
+
+
+</ul>
+
+
+
+<ul id="ddsubmenu8" class="ddsubmenustyle">
+
+<!--<li><a href="Integrated_Security_Solutions_in_Voice_Implied_Broadcasting.pdf" target="_blank">Invite quotation for Integrated Security Solutions in Voice Implied Broadcasting in Oak Grove School</a></li>-->
+<!--	<li><a href="tenders/TenderNotice.pdf" target="_blank">Tenders Notice</a></li>-->
+				<li><a href="QuotationStationery2025-26.pdf" target="_blank">Quotation Notice for supply of Text Books, Note Books & Stationery Items for the session 2025-26</a></li>
+
+		<li><a href="https://nr.indianrailways.gov.in/Tender_cpp.jsp?lang=0&amp;id=0,3" target="_blank">Current Tenders</a></li>
+
+
+</ul>
+
+
+
+<ul id="ddsubmenu9" class="ddsubmenustyle">
+
+						<li><a href="pressrelease.html">Press Release</a></li>
+
+
+</ul>
+
+
+
+<ul id="ddsubmenu10" class="ddsubmenustyle">
+
+						<li><a href="tc.html">TC Issued</a></li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+<!-- end of new menu bar-->
+
+<!--w3l-header-->
+
+<header class="w3l-header-nav">  
+</div>
+
+<!-- line no in css  9823-->
+
+
+
+
+
+
+
+	<!--/nav       Check line at assets/css/sty;estarter line 3145 for gap logo and red maroon heading bar-->
+	<nav class="navbar navbar-expand-lg fill px-lg-0 py-0 px-3">      
+		<div class="container">
+		<!--	<a class="navbar-brand" href="index.html">Oak Grove<span>School</span></a>-->
+			<!-- if logo is image enable this  --> 
+						<a class="navbar-brand" href="index-2.html">
+<!--							<img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;" />-->
+
+<!--<img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:65px;" />						</a> -->
+
+
+<img src="assets/images/logo.png" alt="Your logo" title="Your logo"  class="img-thumbnailhomelogo"/>						</a>
+
+
+
+	<!---->		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+
+                </ul>
+                <!--/search-right-->
+				
+				<!--//search-right-->
+				
+				<!--<div class="box-support">
+				
+				<p><a href="http://www.indianrailways.gov.in" target="_blank"><img src="images/logorail.png" /></a>
+				<a href="http://cbse.nic.in/newsite/index.html" target="_blank"><img src="images/logocbse.png" /></a>
+				
+				
+				
+					<span class="fa fa-headphones"></span>
+					<h565>0135-2630200</h565></p>
+				</div>
+				
+				-->
+			</div>
+		</div>
+	</nav>
+	<!--//nav-->
+</header>
+<!-- //w3l-header --><!-- //w3l-header -->
+
+	
+	
+<!--<section class="w3l-main-slider">-->
+
+<!--  new carousel-->
+
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-services py-5">
+        <div class="container py-lg-5 py-md-3">
+            <h2 class="title">Our Heads</h2>
+        </div>
+    </div>
+</section>
+<!--<section class="w3l-breadcrumb">
+    <div class="container">
+       
+    </div>
+</section>-->
+
+
+
+
+
+ 
+
+<!-- end of new carousel-->
+
+
+
+  <!-- main-slider -->
+  <!--<div class="companies20-content">
+    <div class="companies-wrapper">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Building Block for any Scholar</h3>
+                
+                <a href="about.html" class="btn btn-primary btn-style ml-2">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info  banner-view banner-top2">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Flooring for any Scholar</h3>
+               
+                <a href="about.html" class="btn btn-primary btn-style ml-2">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view banner-top1">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Professionals you can rely on</h3>
+               <a href="about.html" class="btn btn-primary btn-style">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <!-- /main-slider -->
+<!--</section>-->
+
+<!-- home page service grids -->
+
+<!-- //home page service grids -->
+<!-- grids -->
+<section class="grids-1 py-5">
+    <div class="grids11 py-lg-5 py-md-4">
+        <div class="container">
+		<!--<h100>Heads</h100>-->
+		<p>The present head of the school is a member of Indian Railway Service, in the rank of Deputy Secretary to the Government of INDIA. He coordinates for all administrative and academic matters of the school. Each of the three sections are headed by Head Mistress and Head Master in the rank of Assistant Director and Deputy Director to the Govt. of INDIA who take care of the day to day responsibilities of academics and related works.
+		</p>
+		
+		
+
+	
+	
+	
+	
+	
+			<!-- grids -->
+<!--<section class="grids-1 py-5">
+    <div class="grids py-lg-5 py-md-4">
+        <div class="container">
+            <div class="row text-center grids-gap">
+                
+				
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="column"><h4>Mr. Abhishek Kesarwani<br>(IRPS), Principal</h4>
+                        <a href="#single"><img src="assets/images/g333.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+                
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="column"><h4>Dr. Sanjay Dube<br>Headmaster, Senior Boys School</h4>
+                        <a href="#single"><img src="assets/images/headmaster_boys_school1.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-md-0 mt-4">
+                    <div class="column"><h4>Mrs. Kusum Kamboj<br>Headmistress, Senior Girls School</h4>
+                        <a href="#single"><img src="assets/images/head_mistress_girls_school.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-0 mt-4">
+                    <div class="column">
+                      <h4>Mr. Anand Kumar<br>
+                        Headmaster Incharge, Junior School</h4>
+                        <a href="#single"><img src="assets/images/headmaster_junior_school.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!-- //grids -->
+	
+	
+	
+	
+	
+	<table width="100%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="2%">&nbsp;</td>
+    <td width="2%">&nbsp;</td>
+    <td width="2%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+    <td width="33%"><a href="principalmessage.html"><img src="assets/images/g333.jpg" alt=""  class="img-responsive"/></a></td>
+    <td width="33%">&nbsp;</td>
+    <td width="2%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><b> Mr. Naresh Kumar<br>(IRPS), Principal </b>
+	
+	</div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+	
+	
+	
+	
+	
+	
+<table width="100%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td width="31%">&nbsp;</td>
+    <td width="1%">&nbsp;</td>
+    <td width="32%">&nbsp;</td>
+    <td width="1%">&nbsp;</td>
+    <td width="32%">&nbsp;</td>
+    <td width="1%">&nbsp;</td>
+    <td width="1%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a href="headmasterboysschool.html"><img src="assets/images/headmaster_boys_school1.jpg" alt="" width="400" height="268" class="example-image img-responsive"/></a></td>
+    <td>&nbsp;</td>
+    <td><a href="headmistressgirlsschool.html"><img src="assets/images/head_mistress_girls_school.jpg" alt="" width="400" height="265" align="absbottom" class="example-image img-responsive"/></td>
+    <td>&nbsp;</td>
+    <td><!--<img src="images/g2.jpg" alt="" width="400" height="265" align="absbottom" class="example-image img-responsive"/>-->
+      <a href="headmasterjuniorschool.html"><img src="assets/images/headmaster_junior_school.jpg" alt="" width="400" height="265" align="absbottom" class="example-image img-responsive"/></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="center" valign="middle"><b>Mr. R.K. Nagpal<br>
+Headmaster(IC), Senior Boys' School </b></td>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td align="center" valign="middle"><b>Ms. Kusum Kamboj<br>
+Headmistress, Senior Girls'  School</b></td>
+    <td align="center">&nbsp;</td>
+    <td align="center"><b>Dr. (Smt.) Dharya Nagpal<br>
+Headmistress(IC), Junior School</b></td>
+    <td align="center">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+</table>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		<!-- grids -->
+
+<!-- //grids -->
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+           
+        </div>
+    </div>
+</section>
+<!-- //grids -->
+
+
+
+
+
+<!--  Fun facts section -->
+    <section class="w3l-stats">
+        <div class="main-w3 py-5" id="stats">
+            <div class="container py-lg-3">
+<!--                <h3 class="title-big">Infographic</h3>-->
+                <div class="row main-cont-wthree-fea">
+                    
+					
+					
+					
+<!--					<div class="col-lg-3 col-6 mt-4">-->
+                     <div class="col-lg-3 col-6 mt-sm-4 mt-3">
+	                    <div class="grids-speci1">
+                            <span class="fa fa-building" aria-hidden="true"></span>
+                            <h3 class="title-spe">1:14</h3>
+                            <p>Teacher Student Ratio</p>
+                        </div>
+                    </div>
+                    
+					
+					
+					<!--<div class="col-lg-3 col-6 mt-4">-->
+                  
+				  <div class="col-lg-3 col-6 mt-sm-4 mt-3">
+				        <div class="grids-speci1">
+                            <span class="fa fa-file-text" aria-hidden="true"></span>
+                            <h3 class="title-spe">138</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                  </div>
+                    
+					
+					
+					<div class="col-lg-3 col-6 mt-sm-4 mt-3">
+                        <div class="grids-speci1">
+                            <span class="fa fa-trophy" aria-hidden="true"></span>
+                            <h3 class="title-spe">600</h3>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                    
+					
+					<div class="col-lg-3 col-6 mt-sm-4 mt-3">
+                        <div class="grids-speci1">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <h3 class="title-spe">1st Rank</h3>
+                            <p>Govt. Boarding School</p>
+                        </div>
+                    </div>
+                
+				
+				
+				</div>
+
+            </div>
+        </div>
+    </section>
+  
+  
+
+  
+  
+  
+     <!--  //Fun facts section -->
+<section class="w3l-footer-29-main">
+  <div class="footer-29 py-5">
+    <div class="container py-lg-4">
+      <div class="row footer-top-29">
+        <div class="footer-list-29 col-lg-4">
+          <h6 class="footer-title-29">About Oak Grove School</h6>
+          <p>This school has a glorious tradition of 138 years and it is now ready to transform itself to an institution of modern times. The real challenge lies in embracing modern technologies without breaking the traditions of the past which is not an easy task.</p>
+          <div class="main-social-footer-29 mt-4">
+            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+           <!-- <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>  -->        
+			</div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1 mt-lg-0 mt-5">
+          <h6 class="footer-title-29">Contact Us</h6>
+          <ul>
+            <li>
+              <p><span class="fa fa-map-marker"></span>Oak Grove School<br>
+Jharipani P.O., Mussoorie Hills,<br>
+District Dehra Dun - 248179<br>
+Uttaranchal, India</p>
+            </li>
+            <li><a href="tel: 0135-2764340"><span class="fa fa-phone"></span> +(91) 0135-2630200</a></li>
+            <li><a href="#" class="mail"><span class="fa fa-envelope-open-o"></span>
+                principalogs.nr@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-lg-0 mt-5">
+
+          <ul>
+            <h6 class="footer-title-29">Useful Links</h6>
+            <li><a href="index-2.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pressrelease.html">Press Release</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+          <h6 class="footer-title-29">Latest from blog</h6>
+          <div class="footer-post mb-4">
+            <a href="#blog-single">Helping you and your child become a better and responsible citizens of India.</a>
+            <p class="small"><span class="fa fa-clock-o"></span> 2nd May, 2022</p>
+          </div>
+          <!--<div class="footer-post">
+            <a href="#blog-single">Helping you and your child become a better and responsible citizens of India.</a>
+            <p class="small"><span class="fa fa-clock-o"></span>2 July, 2021</p>
+          </div>-->
+        </div>
+        <div class="col-lg-12 footer-list-29 footer-4 mt-5">
+          <div class="column1 align-self">
+            <h6 class="footer-title-29 mb-1">Subscribe to our Newsletter </h6>
+            <p>Enter your email and receive the latest news from us.</p>
+          </div>
+          <div class="column1">
+            <form action="#" class="subscribe" method="post">
+              <input type="email" name="email" placeholder="Your Email Address" required="">
+              <button><span class="fa fa-envelope-o"></span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+    <div class="bottom-copies">
+      <p class="copy-footer-29 text-center">2022 Oak Grove School. All rights reserved. Design by <a
+          href="https://www.ikoninfosystems.com/" target="_blank">
+          Ikon Infosystems</a></p>
+    </div>
+  </div>
+
+  <!-- move top -->
+  
+  <!-- move top -->
+  <button onClick="topFunction()" id="movetop" title="Go to top">
+    &#10548;
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<!----><script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for carousel1 -->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: false,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+<!-- script for owlcarousel -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for owlcarousel -->
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+</html>

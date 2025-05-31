@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak Grove School | Excellence Since 1888</title>
+    <meta name="description" content="Oak Grove School provides quality education in Mussoorie since 1888. Offering CBSE and IGCSE curriculum with focus on holistic development.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        :root {
+            --primary-blue: #0a4c8c;
+            --secondary-blue: #1e6eb0;
+            --light-blue: #e6f2ff;
+            --accent-gold: #d4af37;
+            --dark-blue: #08315e;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --text-dark: #333333;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-top: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 15px 0;
+            position: fixed;
+            top: -100px;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            transition: transform 0.4s ease, background 0.3s ease;
+        }
+        
+        header.visible {
+            transform: translateY(100px);
+        }
+        
+        header.scrolled {
+            padding: 10px 0;
+            background: rgba(8, 49, 94, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            border: 3px solid var(--white);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: rotate(15deg) scale(1.1);
+        }
+        
+        .school-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .school-motto {
+            font-size: 14px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: right;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+        
+        .contact-item:hover {
+            color: var(--accent-gold);
+        }
+        
+        /* Navigation */
+        nav {
+            padding: 15px 0;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-menu li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-menu li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-menu li a:hover:after, 
+        .nav-menu li a.active:after {
+            width: 100%;
+        }
+        
+        .nav-menu li a:hover, 
+        .nav-menu li a.active {
+            color: var(--accent-gold);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 76, 140, 0.8), rgba(8, 49, 94, 0.9)), url('https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Oak-Grove-School-1.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 20%, rgba(8, 49, 94, 0.7) 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+            animation: fadeInDown 1s both;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s both 0.3s;
+        }
+        
+        .btn-container {
+            animation: fadeIn 1s both 0.6s;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background-color: var(--accent-gold);
+            color: var(--dark-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            border: 2px solid var(--accent-gold);
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            color: var(--accent-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+            margin-left: 20px;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-blue);
+        }
+        
+        /* About Section */
+        .section {
+            padding: 100px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .section-title p {
+            color: var(--secondary-blue);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: var(--accent-gold);
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            color: var(--primary-blue);
+            margin-bottom: 25px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .about-text p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .history-highlight {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            padding: 35px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+            color: var(--white);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .history-highlight:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .history-highlight h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .history-highlight .year {
+            font-size: 64px;
+            color: var(--accent-gold);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Features Section */
+        .features {
+            background-color: var(--light-blue);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            height: 200px;
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover .feature-icon {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+        }
+        
+        .feature-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feature-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .feature-content p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .feature-link {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        
+        .feature-link:hover {
+            color: var(--accent-gold);
+            gap: 12px;
+        }
+        
+        /* Academics Section */
+        .academics {
+            background-color: var(--white);
+        }
+        
+        .academics-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tab-btn {
+            padding: 12px 25px;
+            background-color: var(--light-blue);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--primary-blue);
+        }
+        
+        .tab-btn.active {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .tab-btn:hover:not(.active) {
+            background-color: rgba(10, 76, 140, 0.1);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.8s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .curriculum-item {
+            background-color: var(--light-blue);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .curriculum-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .curriculum-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--white);
+            font-size: 30px;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z"></path></svg>');
+            background-size: 100px 100px;
+            opacity: 0.5;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .stat-item {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .stat-number {
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .stat-text {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Downloads Section */
+        .downloads-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .download-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            transition: var(--transition);
+        }
+        
+        .download-item:last-child {
+            border-bottom: none;
+        }
+        
+        .download-item:hover {
+            background-color: var(--light-blue);
+            transform: translateX(10px);
+        }
+        
+        .download-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .download-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--light-blue);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            font-size: 24px;
+            transition: var(--transition);
+        }
+        
+        .download-item:hover .download-icon {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .download-text h4 {
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .download-text p {
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .download-btn {
+            padding: 10px 25px;
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--light-blue);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            box-shadow: var(--shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            z-index: 2;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--white);
+            padding: 100px 0;
+        }
+        
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .testimonial-item {
+            background-color: var(--light-blue);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 0 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            outline: none;
+        }
+        
+        .testimonial-text {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 25px;
+            position: relative;
+            line-height: 1.8;
+            padding: 0 20px;
+        }
+        
+        .testimonial-text i {
+            color: var(--accent-gold);
+            opacity: 0.5;
+            position: absolute;
+            font-size: 24px;
+        }
+        
+        .testimonial-text i.fa-quote-left {
+            left: -10px;
+            top: -10px;
+        }
+        
+        .testimonial-text i.fa-quote-right {
+            right: -10px;
+            bottom: -10px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-gold);
+            margin-bottom: 15px;
+        }
+        
+        .author-info {
+            text-align: center;
+        }
+        
+        .author-info h4 {
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        
+        .author-info p {
+            color: var(--secondary-blue);
+            font-size: 16px;
+        }
+
+        /* Slick slider overrides */
+        .slick-dots {
+            bottom: -50px;
+        }
+        
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: var(--primary-blue);
+        }
+        
+        .slick-dots li.slick-active button:before {
+            color: var(--accent-gold);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 80px 0 30px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--white), var(--accent-gold));
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            border-radius: 2px;
+        }
+        
+        .footer-column p, .footer-column a {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-column a:hover {
+            color: var(--accent-gold);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 18px;
+        }
+        
+        .social-link:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-5px);
+            color: var(--dark-blue);
+        }
+        
+        .newsletter-form {
+            position: relative;
+        }
+        
+        .newsletter-form input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 50px;
+            border: none;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .newsletter-form button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            border: none;
+            background-color: var(--accent-gold);
+            color: var(--dark-blue);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .newsletter-form button:hover {
+            background-color: var(--white);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-gold);
+            color: var(--dark-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background-color: var(--white);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 42px;
+            }
+            
+            .hero p {
+                font-size: 20px;
+            }
+            
+            .section {
+                padding: 80px 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-top {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .contact-info {
+                text-align: center;
+                align-items: center;
+            }
+            
+            .nav-menu {
+                gap: 10px;
+            }
+            
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            .hero {
+                padding: 100px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .stat-number {
+                font-size: 48px;
+            }
+            
+            .download-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .download-btn {
+                align-self: flex-end;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .school-name {
+                font-size: 22px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .section-title h2 {
+                font-size: 32px;
+            }
+            
+            .history-highlight .year {
+                font-size: 48px;
+            }
+            
+            .stat-item {
+                padding: 20px;
+            }
+            
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .stat-text {
+                font-size: 14px;
+            }
+            
+            .testimonial-item {
+                padding: 30px 20px;
+            }
+            
+            .testimonial-text {
+                font-size: 16px;
+                padding: 0;
+            }
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-container">
+                    <div class="logo" aria-label="Oak Grove School Logo">OGS</div>
+                    <div>
+                        <div class="school-name">Oak Grove School</div>
+                        <div class="school-motto">Knowledge, Character, and Service</div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>+91 135 264 3100</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>info@oakgrovejharipani.in</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <span>Jharipani, Mussoorie, Uttarakhand 248008</span>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#downloads">Downloads</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Excellence in Education Since 1888</h1>
+                <p>Oak Grove School provides a nurturing environment that fosters intellectual growth, character development, and lifelong learning in the beautiful hills of Mussoorie.</p>
+                <div class="btn-container">
+                    <a href="#admissions" class="btn">Apply Now</a>
+                    <a href="#virtual-tour" class="btn btn-outline">Virtual Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our School</h2>
+                <p>Discover our rich heritage and commitment to educational excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Legacy of Educational Excellence</h3>
+                    <p>Established on <strong>June 1, 1888</strong>, Oak Grove School has been a cornerstone of quality education in the picturesque hills of Mussoorie for over 135 years. Founded by the British Raj for the children of employees of the East Indian Railway, our institution has evolved into one of India's premier residential schools.</p>
+                    <p>Spread across 250 acres of lush greenery at an altitude of 2,025 meters, our campus provides an ideal setting for learning and personal growth. The school follows the educational philosophy of Jiddu Krishnamurti, emphasizing holistic development and self-discovery.</p>
+                    <p>We take pride in our rich heritage while embracing innovation in education. Our student-teacher ratio of 10:1 ensures personalized attention, and our comprehensive curriculum balances academic rigor with creative and physical development.</p>
+                    <div class="history-highlight">
+                        <div class="year">1888</div>
+                        <h4>The Year Oak Grove School Was Founded</h4>
+                        <p>Established on June 1st, 1888 - A legacy of 135 years of educational excellence</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Oak-Grove-School-2.jpg" alt="Historic Main Building of Oak Grove School" loading="lazy">
+                    <div class="gallery-caption">Historic Main Building</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Oak Grove</h2>
+                <p>We provide an educational experience that prepares students for success in life</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Academic Excellence</h3>
+                        <p>Our rigorous curriculum and dedicated faculty ensure students achieve their academic potential with consistently outstanding board results (95% pass rate). We follow both CBSE and IGCSE curricula.</p>
+                        <a href="#academics" class="feature-link">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Green Campus</h3>
+                        <p>Set amidst 250 acres of pristine forest with breathtaking Himalayan views, our eco-friendly campus provides an inspiring natural environment for learning and growth with modern, sustainable facilities.</p>
+                        <a href="#campus" class="feature-link">Explore Campus <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Holistic Development</h3>
+                        <p>We focus on the all-round development through sports, arts, leadership programs, and community service. Our 30+ extracurricular activities help students discover their passions and talents.</p>
+                        <a href="#campus-life" class="feature-link">Discover Programs <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section academics">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Academics</h2>
+                <p>Comprehensive educational programs designed for intellectual growth</p>
+            </div>
+            
+            <div class="academics-tabs">
+                <button class="tab-btn active" data-tab="junior">Junior School</button>
+                <button class="tab-btn" data-tab="middle">Middle School</button>
+                <button class="tab-btn" data-tab="senior">Senior School</button>
+                <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+            </div>
+            
+            <div id="junior" class="tab-content active">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Junior School (Classes I-V)</h3>
+                        <p>Our Junior School program focuses on foundational learning in a nurturing environment. We emphasize:</p>
+                        <ul style="margin-bottom: 20px; padding-left: 20px;">
+                            <li>Literacy and numeracy skills development</li>
+                            <li>Inquiry-based learning approaches</li>
+                            <li>Social and emotional development</li>
+                            <li>Creative expression through arts and crafts</li>
+                            <li>Introduction to environmental awareness</li>
+                        </ul>
+                        <p>With small class sizes and specialized teachers, we ensure each child receives individual attention to build strong academic foundations while fostering curiosity and love for learning.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Junior-School.jpg" alt="Junior School students in classroom" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="middle" class="tab-content">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Middle School (Classes VI-VIII)</h3>
+                        <p>The Middle School years are crucial for intellectual and personal development. Our program features:</p>
+                        <ul style="margin-bottom: 20px; padding-left: 20px;">
+                            <li>Subject-specialized teaching across disciplines</li>
+                            <li>Development of critical thinking skills</li>
+                            <li>Introduction to research methodologies</li>
+                            <li>Leadership and teamwork opportunities</li>
+                            <li>Enhanced focus on technology integration</li>
+                        </ul>
+                        <p>We help students navigate this transitional phase with academic support and guidance counseling, preparing them for the challenges of senior school.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Middle-School.jpg" alt="Middle School students in science lab" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="senior" class="tab-content">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Senior School (Classes IX-XII)</h3>
+                        <p>Our Senior School prepares students for board examinations and higher education with:</p>
+                        <ul style="margin-bottom: 20px; padding-left: 20px;">
+                            <li>CBSE and IGCSE curriculum options</li>
+                            <li>Specialization in Science, Commerce or Humanities</li>
+                            <li>University and career counseling</li>
+                            <li>Advanced research projects</li>
+                            <li>Competitive exam preparation</li>
+                        </ul>
+                        <p>With a 95% board exam pass rate and excellent university placement record, our senior program equips students with the knowledge and skills for future success.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Senior-School.jpg" alt="Senior School students discussing" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="curriculum" class="tab-content">
+                <h3 style="text-align: center; margin-bottom: 30px; color: var(--primary-blue);">Our Comprehensive Curriculum</h3>
+                <div class="curriculum-grid">
+                    <div class="curriculum-item">
+                        <div class="curriculum-icon">
+                            <i class="fas fa-atom" aria-hidden="true"></i>
+                        </div>
+                        <h4>Science</h4>
+                        <p>Rigorous programs in Physics, Chemistry, Biology with state-of-the-art laboratories and research opportunities.</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <div class="curriculum-icon">
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
+                        </div>
+                        <h4>Mathematics</h4>
+                        <p>From foundational arithmetic to advanced calculus, developing strong quantitative reasoning skills.</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <div class="curriculum-icon">
+                            <i class="fas fa-globe-asia" aria-hidden="true"></i>
+                        </div>
+                        <h4>Humanities</h4>
+                        <p>Comprehensive study of History, Geography, Political Science, Economics, and Psychology.</p>
+                    </div>
+                    <div class="curriculum-item">
+                        <div class="curriculum-icon">
+                            <i class="fas fa-language" aria-hidden="true"></i>
+                        </div>
+                        <h4>Languages</h4>
+                        <p>English, Hindi, Sanskrit, French and German with emphasis on literature and communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item floating">
+                    <div class="stat-number">135+</div>
+                    <div class="stat-text">Years of Excellence</div>
+                </div>
+                <div class="stat-item floating delay-1">
+                    <div class="stat-number">250</div>
+                    <div class="stat-text">Acre Campus</div>
+                </div>
+                <div class="stat-item floating delay-2">
+                    <div class="stat-number">10:1</div>
+                    <div class="stat-text">Student-Teacher Ratio</div>
+                </div>
+                <div class="stat-item floating delay-3">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-text">Board Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Important Downloads</h2>
+                <p>Access essential documents and information for students and parents</p>
+            </div>
+            <div class="downloads-container">
+                <div class="download-item">
+                    <div class="download-info">
+                        <div class="download-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="download-text">
+                            <h4>Admission Prospectus</h4>
+                            <p>Complete information about admission process and requirements</p>
+                        </div>
+                    </div>
+                    <a href="https://www.oakgrovejharipani.in/downloads/prospectus.pdf" class="download-btn">Download <i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="download-item">
+                    <div class="download-info">
+                        <div class="download-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="download-text">
+                            <h4>Academic Calendar 2023-24</h4>
+                            <p>Important dates and events for the current academic year</p>
+                        </div>
+                    </div>
+                    <a href="https://www.oakgrovejharipani.in/downloads/calendar.pdf" class="download-btn">Download <i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="download-item">
+                    <div class="download-info">
+                        <div class="download-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="download-text">
+                            <h4>Fee Structure</h4>
+                            <p>Detailed fee information for all classes</p>
+                        </div>
+                    </div>
+                    <a href="https://www.oakgrovejharipani.in/downloads/fees.pdf" class="download-btn">Download <i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="download-item">
+                    <div class="download-info">
+                        <div class="download-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="download-text">
+                            <h4>Medical Form</h4>
+                            <p>Required health form for all new admissions</p>
+                        </div>
+                    </div>
+                    <a href="https://www.oakgrovejharipani.in/downloads/medical-form.pdf" class="download-btn">Download <i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="download-item">
+                    <div class="download-info">
+                        <div class="download-icon">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="download-text">
+                            <h4>Bus Routes & Schedule</h4>
+                            <p>Transportation information for day scholars</p>
+                        </div>
+                    </div>
+                    <a href="https://www.oakgrovejharipani.in/downloads/bus-schedule.pdf" class="download-btn">Download <i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="campus" class="section gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Campus Gallery</h2>
+                <p>Experience our beautiful campus through these images</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Main-Building.jpg" alt="Main Academic Block of Oak Grove School" loading="lazy">
+                    <div class="gallery-caption">Main Academic Block</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Classroom.jpg" alt="Modern classroom with students" loading="lazy">
+                    <div class="gallery-caption">Modern Classroom</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Science-Lab.jpg" alt="Students working in science laboratory" loading="lazy">
+                    <div class="gallery-caption">Science Laboratory</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Library.jpg" alt="School library with students reading" loading="lazy">
+                    <div class="gallery-caption">School Library</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Sports.jpg" alt="Students playing sports on campus" loading="lazy">
+                    <div class="gallery-caption">Sports Facilities</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.oakgrovejharipani.in/wp-content/uploads/2022/05/Cultural-Event.jpg" alt="Students performing at cultural event" loading="lazy">
+                    <div class="gallery-caption">Cultural Events</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Community Says</h2>
+                <p>Hear from students, parents, and alumni about their Oak Grove experience</p>
+            </div>
+            
+            <div class="testimonials-container" aria-live="polite">
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        Oak Grove provided me with more than just an education - it gave me confidence, lifelong friendships, and values that continue to guide me. The teachers genuinely care about each student's growth.
+                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Priya Sharma" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Class of 2015, Software Engineer at Google</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        As parents, we couldn't be happier with our child's development at Oak Grove. The balance of academic rigor and extracurricular activities is perfect, and the values they instill are exactly what we hoped for.
+                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajiv Malhotra" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Rajiv Malhotra</h4>
+                            <p>Parent of Class X Student</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        The beautiful campus and dedicated teachers make learning at Oak Grove a truly enriching experience. I've grown not just academically but also as a person, with opportunities in sports, arts, and leadership.
+                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Ananya Patel" class="author-img" loading="lazy">
+                        <div class="author-info">
+                            <h4>Ananya Patel</h4>
+                            <p>Class XII Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Oak Grove School</h3>
+                    <p>Established in 1888, Oak Grove School has been providing quality education in the serene hills of Mussoorie for over a century. We nurture young minds to become responsible global citizens through a balanced approach to academics, sports, arts, and character development.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/oakgrovejharipani" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/oakgrovejharipani" class="social-link" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/oakgrovejharipani" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/user/oakgrovejharipani" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/school/oak-grove-school-jharipani" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#academics">Academics</a>
+                    <a href="#admissions">Admissions</a>
+                    <a href="#campus">Campus Life</a>
+                    <a href="#downloads">Downloads</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Jharipani, Mussoorie, Uttarakhand 248008</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +91 135 264 3100</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@oakgrovejharipani.in</p>
+                    <p><i class="fas fa-clock" aria-hidden="true"></i> Office Hours: 8:00 AM - 4:00 PM (Mon-Sat)</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates and news about Oak Grove School.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required aria-label="Email address for newsletter">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Oak Grove School, Jharipani. All Rights Reserved. | Established June 1, 1888</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Smart Header - Only show when scrolling up
+        let lastScroll = 0;
+        const header = document.getElementById('header');
+        const headerHeight = header.offsetHeight;
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                // At top of page - always show header
+                header.classList.add('visible');
+                header.classList.remove('scrolled');
+                return;
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > headerHeight) {
+                // Scrolling down and past header height - hide header
+                header.classList.remove('visible');
+            } else if (currentScroll < lastScroll) {
+                // Scrolling up - show header
+                header.classList.add('visible');
+            }
+            
+            // For the scrolled effect (smaller header when not at top)
+            if (currentScroll > headerHeight) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Intersection Observer for scroll animations
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Academics tabs
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Initialize testimonials slider with error handling
+        try {
+            $(document).ready(function(){
+                $('.testimonials-container').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    arrows: false,
+                    adaptiveHeight: true,
+                    accessibility: true
+                });
+            });
+        } catch (e) {
+            console.error('Slider initialization failed:', e);
+            // Fallback: display testimonials in a column
+            document.querySelector('.testimonials-container').style.display = 'block';
+            document.querySelectorAll('.testimonial-item').forEach(item => {
+                item.style.marginBottom = '40px';
+            });
+        }
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                // Here you would typically send the email to your server
+                alert(`Thank you for subscribing with ${email}! You'll receive our newsletter soon.`);
+                this.reset();
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active navigation
+                    document.querySelectorAll('.nav-menu a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Active navigation based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if(pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

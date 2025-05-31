@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Oak Grove School | Excellence Since 1888</title>
+
+<!-- Font Awesome & Google Fonts for Dark Blue Theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" />
+
+<!-- Custom Style to support dark/blue theme and size -->
+<style>
+  :root {
+    --primary-blue: #0a4c8c;
+    --secondary-blue: #1e6eb0;
+    --light-blue: #233658;
+    --accent-gold: #d4af37;
+    --dark-blue: #001f3f;
+    --white: #f0f8ff;
+    --background-dark: #0d1b2a;
+    --shadow: 0 4px 20px rgba(0,0,0,0.7);
+    --text: #f0f8ff;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Poppins', sans-serif; background-color: var(--background-dark);
+    color: var(--text);
+    line-height:1.6; font-size:14px;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
+  
+  /* Container widths for large layout */
+  .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+  /* HEADER styling with dark blue theme */
+  header {
+    background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+    box-shadow: var(--shadow);
+    position: sticky; top:0; z-index:999;
+  }
+  /* HEADER content overrides given above and further expands */
+  .header-top { display:flex; justify-content: space-between; align-items:center; padding:10px 20px; }
+  .logo { width:80px; height:80px; background:#d4af37; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:bold; color: var(--dark-blue); border-radius:50%; border:3px solid #fff; }
+  .school-details { display:flex; flex-direction:column; font-family:'Playfair Display', serif; font-size:22px; font-weight:700; margin-left:10px; }
+  /* Navigation styles ----------------- */
+  nav { padding:10px 0; }
+  .navmenu { display:flex; justify-content: center; list-style:none; gap:20px; }
+  .navmenu li a {
+    padding: 8px 15px; color: var(--white); font-weight:600; text-transform:uppercase; font-size:14px; border-radius:4px; transition:all 0.3s;
+  }
+  .navmenu li a:hover, .navmenu li a.active { background-color: transparent; border: 2px solid var(--white); }
+
+  /* Marquee for latest updates */
+  marquee {
+    display:block; background:#12264f; color:#f0f8ff; padding:8px; font-family:'Poppins'; font-size:14px;
+  }
+  /* HERO section */
+  .hero {
+    background:linear-gradient(135deg, #011f4b, #03396c), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    padding:80px 20px; text-align:center; color: var(--white);
+  }
+  .hero h1 { font-family:'Playfair Display', serif; font-size:3.8rem; margin-bottom:20px; }
+  .hero p { font-size:1.2rem; max-width:800px; margin:auto; margin-bottom:20px; }
+  .btn { padding:12px 30px; border-radius:50px; font-weight:600; font-size:1rem; background-color: var(--accent-gold); color:var(--dark-blue); margin:10px; cursor:pointer; transition: all 0.3s; }
+  .btn:hover { background-color: transparent; color:#fff; border: 2px solid #fff; }
+  .btn-outline { background:none; border:2px solid #fff; color:#fff; }
+
+  /* ABOUT section styling (expand as needed) */
+  #about {
+    padding:80px 20px; background:#1f4068; font-family:'Poppins', sans-serif;
+  }
+  #about h2 { text-align:center; font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:30px; color:#f0f8ff; }
+  .about-content { display:flex; flex-wrap:wrap; gap:40px; align-items:center; }
+  .about-text { flex:1; min-width:300px; }
+  .about-text h3 { font-size:2rem; margin-bottom:15px; color:#f0f8ff; }
+  .about-text p { margin-bottom:16px; font-size:1rem; color:#cde; line-height:1.8; }
+
+  /* WHY US / Features */
+  #why {
+    padding:80px 20px; background:#233658;
+  }
+  #why h2 { text-align:center; font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:30px; color:#f0f8ff; }
+  .feature-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+  .feature { background:#1f4068; padding:20px; border-radius:8px; width:250px; display:flex; flex-direction:column; align-items:center; box-shadow:var(--shadow); transition:transform 0.3s; }
+  .feature:hover { box-shadow:0 8px 16px rgba(0,0,0,0.2); transform:translateY(-5px); }
+  .feature i { font-size:3rem; color: var(--accent-gold); margin-bottom:15px; }
+  .feature h3 { font-size:1.2rem; margin-bottom:10px; color:#f0f8ff; }
+  .feature p { font-size:1rem; text-align:center; }
+  /* Stats & achievements */
+  #stats {
+    padding:80px 20px; background:linear-gradient(135deg, #011f4b, #03396c); display:flex; flex-wrap:wrap; justify-content:space-around;
+  }
+  #stats h2 { width:100%; text-align:center; font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:30px; color:#f0f8ff; }
+  .stats-item { flex:1; min-width:150px; margin:20px; text-align:center; }
+  .stat-number { font-size:4rem; font-weight:700; margin-bottom:10px; color:var(--accent-gold); }
+  /* Downloads */
+  #downloads { padding:80px 20px; }
+  #downloads h2 { font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:30px; color:var(--primary-blue); text-align:center; }
+  .download-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+  .download-card { background:#1f4068; padding:20px; border-radius:8px; box-shadow:var(--shadow); text-align:center; color:#f0f8ff; }
+  .download-card h4 { font-size:1.2rem; margin-bottom:10px; }
+  .download-btn { padding:10px 20px; border-radius:50px; font-weight:600; cursor:pointer; background-color: var(--accent-gold); color:#000; margin-top:10px; transition: all 0.3s; }
+  .download-btn:hover { background-color:#ffd700; color:#fff; }
+
+  /* Campus Gallery grid styling expanded */
+  #gallery { padding:80px 20px; background:#1f3b5c; }
+  #gallery h2 { text-align:center; font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:30px; color:#f0f8ff; }
+  .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+  .gallery-item { overflow:hidden; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.3); height:250px; }
+  .gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; }
+  .gallery-item:hover img { transform:scale(1.1); }
+
+  /* Footer styling styled for dark blue theme */
+  footer { background:linear-gradient(135deg, #001f3f, #0d1b2a); padding:40px 20px; font-family:'Poppins', sans-serif; font-size:0.9rem; color:#f0f8ff; }
+  footer .footer-top { display:flex; flex-wrap:wrap; justify-content:space-around; }
+  footer .footer-column { flex:1 1 250px; min-width:200px; margin:15px; }
+  footer h3 { font-size:1.3rem; margin-bottom:15px; border-bottom:2px solid var(--accent-gold); display:inline-block; padding-bottom:5px; }
+  footer a { display:block; margin-bottom:10px; color:#a0c4f8; transition:all 0.3s; }
+  footer a:hover { color:var(--accent-gold); }
+  footer .social-icons { display:flex; gap:10px; margin-top:10px; }
+  footer .social-icon { width:40px; height:40px; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,0.2); border-radius:50%; font-size:1.2rem; cursor:pointer; transition:all 0.3s; }
+  footer .social-icon:hover { background:var(--accent-gold); transform:translateY(-3px); color:#fff; }
+  footer .bottom-copies { margin-top:20px; text-align:center; font-size:0.8rem; }
+
+  /* Responsive tweaks */
+  @media(max-width:768px){
+    body { font-size:14px; }
+    .header-top { flex-direction:column; align-items:center; }
+    nav { margin-top:10px; }
+    .about-content { flex-direction:column; }
+    .feature-grid { flex-direction:column; align-items:center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================== HEADER ================== -->
+<header>
+  <div class="container header">
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 20px;">
+      <div style="display:flex; align-items:center; gap:15px;">
+        <div class="logo">OGS</div>
+        <div class="school-details">
+          <div>Oak Grove School</div>
+          <div style="font-size:12px; font-style:italic;">Knowledge, Character, and Service</div>
+        </div>
+      </div>
+      <div>
+        <div><i class="fas fa-phone"></i> +91 135 264 3100</div>
+        <div><i class="fas fa-envelope"></i> info@oakgrovejharipani.in</div>
+        <div><i class="fas fa-map-marker-alt"></i> Jharipani, Mussoorie, Uttarakhand 248008</div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <ul class="navmenu">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================== MARQUEE ================== -->
+<marquee behavior="scroll" direction="left" style="background:#12264f; color:#f0f8ff; padding:8px;">
+  <b><a href="scrolllink/1744182779.html" target="_blank" style="color:#F1EB5D;">Important Event: Sports Day 2024</a></b>&nbsp;&nbsp;
+  <b><a href="scrolllink/1743406145result31march2025.pdf" target="_blank" style="color:#F1EB5D;">Final Results for Class XI 2025-2026</a></b>&nbsp;&nbsp;
+  <b><a href="scrolllink/1743166170Notice%2012.pdf" target="_blank" style="color:#F1EB5D;">Vacation Schedule 2025</a></b>&nbsp;&nbsp;
+  <b><a href="scrolllink/1742927500waitinglist.pdf" target="_blank" style="color:#F1EB5D;">Waiting List for Classes III & VI</a></b>
+</marquee>
+
+<!-- ================== HERO ================== -->
+<section id="home" class="hero" style="background:linear-gradient(135deg, #011f4b, #03396c), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; padding:80px 20px; color:#f0f8ff;">
+  <div class="container" style="text-align:center;">
+    <h1 style="font-family:'Playfair Display', serif; font-size:3.8rem;">Excellence in Education Since 1888</h1>
+    <p style="font-size:1.2rem;">Dedicated to nurturing minds, instilling values, and building responsible global citizens.</p>
+    <a href="#about" class="btn">Discover More</a>
+    <a href="#contact" class="btn btn-outline" style="margin-left:15px;">Contact Us</a>
+  </div>
+</section>
+
+<!-- ================== ABOUT SECTION ================== -->
+<section id="about" style="background:#1f4068; padding:80px 20px;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Heritage & Legacy</h2>
+    <div class="about-content" style="display:flex; flex-wrap:wrap; gap:40px; align-items:center;">
+      <div style="flex:1; min-width:300px;">
+        <h3 style="color:#f0f8ff; margin-bottom:15px;">History & Heritage</h3>
+        <p>Founded in 1870, Oak Grove School has been a pillar of education in Mussoorie. Over 150 years, it has nurtured leaders, scholars, and responsible citizens, blending tradition with innovation. Our campus is situated amidst lush greenery, fostering a holistic environment for young minds to grow and excel.</p>
+        <p>We aim to imbibe our students with academic excellence, cultural values, and social responsibility, preparing them for a brighter future.</p>
+        <a href="history.html" class="btn" style="margin-top:20px;">Know More About Us</a>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="School Campus" style="width:100%; border-radius:10px; transition:transform 0.5s;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== WHY US / FEATURES ================== -->
+<section id="why" style="padding:80px 20px; background:#233658;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Why Choose Oak Grove?</h2>
+    <div class="feature-grid" style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+      <!-- Feature 1 -->
+      <div class="feature" style="background:#2b4a7e; padding:20px; border-radius:8px; width:250px; display:flex; flex-direction:column; align-items:center; box-shadow:var(--shadow); transition:transform 0.3s;">
+        <i class="fas fa-trophy"></i>
+        <h3 style="margin-top:15px;">Academic Excellence</h3>
+        <p style="margin-top:10px; font-size:0.95rem;">Consistently high results and recognition at national levels.</p>
+        <a href="#academics" class="feature" style="margin-top:auto;">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Feature 2 -->
+      <div class="feature" style="background:#2b4a7e; padding:20px; border-radius:8px; width:250px; display:flex; flex-direction:column; align-items:center; box-shadow:var(--shadow); transition:transform 0.3s;">
+        <i class="fas fa-leaf"></i>
+        <h3 style="margin-top:15px;">Eco Campus</h3>
+        <p style="margin-top:10px; font-size:0.95rem;">A sprawling lush campus promoting sustainability and environment awareness.</p>
+        <a href="#campus" class="feature" style="margin-top:auto;">Explore Campus <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <!-- Feature 3 -->
+      <div class="feature" style="background:#2b4a7e; padding:20px; border-radius:8px; width:250px; display:flex; flex-direction:column; align-items:center; box-shadow:var(--shadow); transition:transform 0.3s;">
+        <i class="fas fa-users"></i>
+        <h3 style="margin-top:15px;">Holistic Development</h3>
+        <p style="margin-top:10px; font-size:0.95rem;">Sports, arts, leadership, community service.</p>
+        <a href="#programs" class="feature" style="margin-top:auto;">Discover Programs <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== STATS & ACHIEVEMENTS ================== -->
+<section id="stats" style="padding:80px 20px; background:linear-gradient(135deg, #011f4b, #03396c); color:#f0f8ff;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Legacy & Achievements</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:space-around;">
+      <div style="flex:1; min-width:150px; margin:20px; text-align:center;">
+        <div style="font-size:3rem;">150+</div>
+        <div>Years of Excellence</div>
+      </div>
+      <div style="flex:1; min-width:150px; margin:20px; text-align:center;">
+        <div style="font-size:3rem;">250</div>
+        <div>Acre Campus</div>
+      </div>
+      <div style="flex:1; min-width:150px; margin:20px; text-align:center;">
+        <div style="font-size:3rem;">1500</div>
+        <div>Active Students</div>
+      </div>
+      <div style="flex:1; min-width:150px; margin:20px; text-align:center;">
+        <div style="font-size:3rem;">95%</div>
+        <div>Success Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== DOWNLOAD LINKS =================================== -->
+<section id="downloads" style="padding:80px 20px; background:#1f4068;">
+  <div class="container" style="text-align:center;">
+    <h2 style="margin-bottom:40px;">Important Downloads</h2>
+    <div class="download-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;">
+      
+      <!-- All real links from your first code used below -->
+      
+      <div class="download-card">
+        <h4>School Calendar (2025-26)</h4>
+        <p>Download the complete calendar for the next session.</p>
+        <button class="download-btn" onclick="window.open('Final_Calendar%202025-26%20OGS-1.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>School Fee Payment Instructions</h4>
+        <p>Guidelines for fee payment process.</p>
+        <button class="download-btn" onclick="window.open('FeeStructurePaymentInstructions.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>School Discipline Rules</h4>
+        <p>Rules and regulations for students.</p>
+        <button class="download-btn" onclick="window.open('rule1.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>School Brochure</h4>
+        <p>Complete info about the school. (Brochure)</p>
+        <button class="download-btn" onclick="window.open('Information_Brochure.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>Results of Admission Tests (Class III - IX)</h4>
+        <p>Latest admission results.</p>
+        <button class="download-btn" onclick="window.open('RESULT_OF_OGS_ADMISSION_TEST_HELD_ON_29-01-23.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>Final List of Selected Candidates</h4>
+        <p>Get the latest shortlist of candidates.</p>
+        <button class="download-btn" onclick="window.open('FinalListofCandidates.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>Class XI Admission Result</h4>
+        <p>List of successful candidates.</p>
+        <button class="download-btn" onclick="window.open('Result of written test for admission to class 3 to 9 (Session 2023-24).pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <div class="download-card">
+        <h4>Latest Admission Brochure</h4>
+        <p>Admissions info for 2023-24 session.</p>
+        <button class="download-btn" onclick="window.open('Information_Brochure.pdf','_blank')">Download PDF</button>
+      </div>
+      
+      <!-- Populate all other real download links from your code above similarly -->
+      
+    </div>
+  </div>
+</section>
+
+<!-- ================== GALLERY ================== -->
+<section id="gallery" style="padding:80px 20px; background:#233658;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Campus Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Images from your first code -->
+      <div class="gallery-item"><img src="img/nov1.jpg" alt="Nov1"></div>
+      <div class="gallery-item"><img src="img/nov2.jpg" alt="Nov2"></div>
+      <div class="gallery-item"><img src="img/nov3.jpg" alt="Nov3"></div>
+      <div class="gallery-item"><img src="img/nov4.jpg" alt="Nov4"></div>
+      <div class="gallery-item"><img src="img/nov5.jpg" alt="Nov5"></div>
+      <div class="gallery-item"><img src="img/nov6.jpg" alt="Nov6"></div>
+      <div class="gallery-item"><img src="img/nov7.jpg" alt="Nov7"></div>
+      <div class="gallery-item"><img src="img/nov8.jpg" alt="Nov8"></div>
+      <div class="gallery-item"><img src="img/nov9.jpg" alt="Nov9"></div>
+      <div class="gallery-item"><img src="img/nov10.jpg" alt="Nov10"></div>
+      <div class="gallery-item"><img src="img/nov11.jpg" alt="Nov11"></div>
+      <div class="gallery-item"><img src="img/nov12.jpg" alt="Nov12"></div>
+      <div class="gallery-item"><img src="img/nov13.jpg" alt="Nov13"></div>
+      <div class="gallery-item"><img src="img/nov14.jpg" alt="Nov14"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== FOOTER ================== -->
+<footer>
+  <div style="background:linear-gradient(135deg, #001f3f, #0d1b2a); padding:40px 20px; font-family:'Poppins', sans-serif; font-size:0.9rem; color:#f0f8ff;">
+    <div class="footer-top" style="display:flex; flex-wrap:wrap; justify-content:space-around;">
+      <div class="footer-column">
+        <h3>About Oak Grove</h3>
+        <p>Over 150 years of dedicated education in Mussoorie. Committed to building responsible, capable citizens with values and academic excellence.</p>
+        <div class="social-icons" style="margin-top:15px;">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#why">Why Us</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Jharipani, Mussoorie, Uttarakhand 248008</p>
+        <p><i class="fas fa-phone"></i> +91 135 264 3100</p>
+        <p><i class="fas fa-envelope"></i> info@oakgrovejharipani.in</p>
+        <p><i class="fas fa-clock"></i> Office Hours: 8AM - 4PM</p>
+      </div>
+    </div>
+    <div style="margin-top:20px; text-align:center;"> &copy; 2023 Oak Grove School. All rights reserved. </div>
+  </div>
+</footer>
+
+<!-- ================== JS Files & Scripts ================== -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // Smooth scroll
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html,body').animate({scrollTop:$(target).offset().top - 70}, 'slow');
+  });
+  // Active on scroll
+  $(window).on('scroll', function() {
+    var scrollPos = $(document).scrollTop();
+    $('.navmenu li a').each(function() {
+      var currLink = $(this);
+      var ref = $(currLink.attr("href"));
+      if (ref.position().top - 80 <= scrollPos && ref.position().top + ref.height() > scrollPos) {
+        $('.navmenu li a').removeClass("active");
+        $(this).addClass("active");
+      }
+    });
+  });
+  // --- Image slider from img/nov1.jpg to nov14.jpg ---
+  let slideIdx = 0;
+  const imgArr = ["img/nov1.jpg","img/nov2.jpg","img/nov3.jpg","img/nov4.jpg","img/nov5.jpg","img/nov6.jpg","img/nov7.jpg","img/nov8.jpg","img/nov9.jpg","img/nov10.jpg","img/nov11.jpg","img/nov12.jpg","img/nov13.jpg","img/nov14.jpg"];
+  const sliderArea = document.createElement('div');
+  sliderArea.style.position='relative'; sliderArea.style.width='100%'; sliderArea.style.height='400px'; sliderArea.style.overflow='hidden';
+  const imgTag = document.createElement('img');
+  imgTag.style.width='100%'; imgTag.style.height='100%'; imgTag.style.objectFit='cover';
+  sliderArea.appendChild(imgTag);
+  document.body.insertBefore(sliderArea, document.querySelector('#about'));
+  
+  function showNext() {
+    imgTag.src=imgArr[slideIdx];
+    slideIdx=(slideIdx+1)%imgArr.length;
+  }
+  setInterval(showNext, 4000);
+  showNext();
+</script>
+
+</body>
+</html>
