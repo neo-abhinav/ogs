@@ -1,0 +1,2695 @@
+<!doctype html>
+<html lang="en">
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+<html lang="en">
+  
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+<!--	<link rel="stylesheet" type="text/css" href="assets/efluidmenu.css" />-->
+ <!-- beginning of carousel-->
+
+  
+  
+  
+  <!--   beginning of top menu-->
+       
+
+<!--[if lte IE 8]>-->
+<style type="text/css">
+
+.efluidmenu > ul{
+			margin-left: 55px;
+}
+
+.efluidmenu > ul li#search{
+			display: none;
+}
+
+	.efluidmenu #sitelogo {
+	    left: 0;  /* position logo to the very left of menu in IE8 and below */
+	}
+	
+	.efluidmenu #sitelogo a {
+	    left: auto;
+	}
+
+</style> 
+
+
+<style type="text/css">
+/*.vidhom {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; 
+}
+
+.vidhom1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
+</style>
+
+  
+<!--[endif]-->
+
+<script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--<script src="assets/efluidmenu.js">-->
+
+
+
+</script>
+
+
+<!--  end of top menu -->
+
+
+<!-- -->
+<!-- slide show begins -->
+	<link rel="stylesheet" type="text/css" href="smooth_slider.css">
+
+	<style>
+	
+	.slideshowwrapper{ /* dimensions of outermost slideshow container */
+		width: 100%;
+		height: 600px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	</style>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="jquery-slider.js">
+
+		/***********************************************
+		* Full Page Slideshow- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* Please keep this notice intact
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+
+	</script>
+	<script>
+		$(function() {
+			$('#resume').on('click', function(){ // set up resume button behavior
+				$("#pan_area").smoothslider("resume") // resume playing of this slideshow. Pass in "pause" to pause it instead
+				$(this).hide() // hide resume button
+			})
+		
+		
+			$("#pan_area").smoothslider("install", {
+				"playlist_url":"playlist.json", // get the playlist and some config from the server
+
+				// this function gets called whenever there's an image change
+				"on_image_change":function(caption, image_url) { 
+						var area= $("#img_msg_area").find("span");
+						area.animate({"opacity": 0}, 500, "swing", function() {
+							area.text(caption);
+							area.animate({"opacity": 1}, 500); // fade in & out take 500ms each
+						});
+					},
+				"loops": 2, // number of loops before stopping. Remove thisoption to run continuously
+				"throbber":$("#throbber"), // an image to show when waiting for images to load
+				on_pause:function(){
+					$('#resume').show()
+				}
+
+			});
+		});
+
+	</script>
+
+<!-- slide show ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- new menu bar-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base.css" />
+<!--<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-sidebar.css" />-->
+<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-topbar.css" />
+
+<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+
+<!-- end of new menu bar-->
+
+<!-- pausing scroller in new beginning-->
+<link rel="stylesheet" href="pausingscroller.css" />
+
+<style>
+
+/* Demo CSS for Pausing Scrollers */
+
+#pscroller1{
+	width: 100%;
+	max-width: 400px;
+	height: 140px;
+/*	border: 1px solid black;*/
+	background-color: white;
+	margin-bottom: 1em;
+	font-size:14px;
+}
+
+#pscroller1 a{
+	text-decoration: underline;
+    color:#000000;
+
+}
+
+
+
+#pscroller1 > div.innerDiv{
+	padding: 8px;
+}
+
+
+#pscroller2{
+	width: 100%;
+	max-width: 350px;
+	height: 35px;
+	border: 1px solid black;
+}
+
+#pscroller2 > div.innerDiv{
+	padding: 4px;
+}
+
+#pscroller2 a{
+	text-decoration: none;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/*Example message arrays for the two demo scrollers*/
+
+var pausecontent=new Array()
+pausecontent[0]='<a href="OGSFixtureCard2022.pdf" target="_blank">Download</a><br />School Calendar Oak Grove School(2022-2023)'
+pausecontent[1]='<a href="Document52.pdf" target="_blank">Download</a><br />Extension of last day of deposit of the 1st installment of School fee'
+pausecontent[2]='<a href="quotationnotice.pdf" target="_blank">Download</a><br />Quotation Notice for Dry Cleaning Of Clothes for two years period w.e.f 01.05.2022 to 30.04.2024'
+
+<!--pausecontent[2]='<a href="http://www.cssdrive.com" target="_new">CSS Drive</a><br />Categorized CSS gallery and examples.'-->
+
+<!--var pausecontent2=new Array()
+<!--pausecontent2[0]='<a href="http://www.news.com/">News.com: Technology and business reports</a>'
+<!--pausecontent2[1]='<a href="http://www.cnn.com/">CNN: Headline and breaking news 24/7</a>'
+<!--pausecontent2[2]='<a href="http://news.bbc.co.uk/">BBC News: UK and international news</a>'-->
+
+</script>
+
+<script type="text/javascript" src="pausingscroller.js">
+
+/***********************************************
+* Pausing up-down scroller- (c) Dynamic Drive (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+
+</script>
+<!-- end pausing scroller in new beginning-->
+
+
+
+
+  </head>
+  
+  <body>
+<!-- new menu bar-->
+<!--<h3>All Levels Navigtional Menu: Top Menu Bar Example</h3>-->
+
+<!--<div id="ddtopmenubar" class="mattblackmenu">-->
+<div id="ddtopmenubar" class="mattblackmenu">
+<ul>
+
+
+<li><a href="index-2.html">Home</a></li>
+<li><a href="#" rel="ddsubmenu1">About</a></li>
+<li><a href="#" rel="ddsubmenu2">Administration</a></li>
+<!--<li><a href="#" rel="ddsubmenu3">Events</a></li>-->
+<li><a href="#" rel="ddsubmenu4">Student Corner</a></li>
+
+
+<li><a href="#" rel="ddsubmenu5">School Fee</a></li>
+<li><a href="#" rel="ddsubmenu6">Admission</a></li>
+<li><a href="#" rel="ddsubmenu7">Visitor Corner</a></li>
+<li><a href="#" rel="ddsubmenu8">Current Tenders</a></li>
+
+
+
+<li><a href="#" rel="ddsubmenu9">Press Release</a></li>
+<li><a href="#" rel="ddsubmenu10">TC</a></li>
+
+
+
+
+
+
+</ul>
+</div>
+
+<a class="animateddrawer" id="ddtopmenubar-mobiletoggle" href="#">
+<span></span>
+</a>
+
+<script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar","topbar") 
+//ddlevelsmenu.setup("mainmenuid", "topbar|sidebar")
+</script>
+
+<!--<p style="margin-top: 2em">More info/ documentation: <a href="http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/">All Levels Navigational Menu</a></p>-->
+
+
+<!--HTML for the Drop Down Menus associated with Top Menu Bar-->
+<!--They should be inserted OUTSIDE any element other than the BODY tag itself-->
+<!--A good location would be the end of the page (right above "</BODY>")-->
+
+<!--Top Drop Down Menu 1 HTML-->
+
+
+<ul id="ddsubmenu1" class="ddsubmenustyle">
+<li><a href="webinnerpg/CBSE%20Circular.html" target="_blank">Mandatory Public Disclosure</a></li>
+
+								<li><a href="history.html">History</a></li>
+								<li><a href="boardofgovernors.html">Board of Governors</a></li>
+								
+								<li><a href="missionandvision.html">Mission & Vision</a></li>
+								<li><a href="schoolmoto.html">School Moto</a></li>
+								<li><a href="schoolsong.html">School Song</a></li>
+
+								<li><a href="destination.html">Destination</a></li>
+								
+								<li><a href="pcpomessage.html">Message from PCPO</a></li>
+								
+								<li><a href="nrwworole.html">NRWWORole</a></li>
+</ul>
+
+
+<!--Top Drop Down Menu 2 HTML-->
+
+<ul id="ddsubmenu2" class="ddsubmenustyle">
+
+<li><a href="head.html">The Head</a></li>
+								<li><a href="exprincipals.html">Ex-Principals</a></li>
+								
+								<li><a href="teachingstaff.html">Teaching Staff</a></li>
+								<li><a href="nonteachingstaff.html">Non Teaching Staff</a></li>
+   							    <li><a href="https://nr.indianrailways.gov.in/" target="_blank">Northern Railways</a></li>		
+
+
+
+</ul>
+
+<!--Top Drop Down Menu 3 HTML-->
+<!--
+<ul id="ddsubmenu3" class="ddsubmenustyle">
+
+<li><a href="news.php">News</a></li>
+								
+								
+								
+								<li><a href="creativecorner/gallery.html">Photo Gallery</a></li>
+								<li><a href="creativecorner/celeberations.html">Celebrations</a></li>
+								<li><a href="mosaic.php">Mosaic</a></li>
+								
+								<li><a href="awardandtrophies.pdf" target="_blank">Awards & Trophies</a></li>
+								<li><a href="honourboardandotherprizes.pdf" target="_blank">Honour Board & other Prizes</a></li>
+
+
+
+
+
+</ul>
+
+-->
+
+
+<ul id="ddsubmenu4" class="ddsubmenustyle">
+
+<li><a href="Final_Calendar%202025-26%20OGS-1.pdf" target="_blank">School Calendar (2025-26)</a></li>
+
+							
+							
+							<li><a href="formsam2/stuprofile.html">Student Profile & Result</a></li>
+
+                                <li><a href="studentslist2024-2025.pdf" target="_blank">Current Student list</a></li>
+
+								<li><a href="rule1.pdf" target="_blank">Discipline Rules</a></li>
+
+								<li><a href="kitlistogs.pdf" target="_blank">Student Kit List 2025-26</a></li>
+
+
+
+								<li><a href="honourboardandotherprizes.pdf" target="_blank">Awards & Trophies</a></li>
+								<li><a href="alumni.html">Alumni Corner</a></li>
+								<li><a href="railempcert.jpg" target="_blank">Proforma for Railway Employee Certificate</a></li>
+
+								
+
+								
+								<li><a href="immunizationandrecordform.pdf" target="_blank">Proforma of Record Form-cum-Immunization Schedule</a></li>
+
+
+
+</ul>
+
+
+
+
+<ul id="ddsubmenu5" class="ddsubmenustyle">
+	
+								
+								<li><a href="FeeStructurePaymentInstructions.pdf" target="_blank">Fee Structure and Payment Instructions</a></li>
+														
+								
+
+								
+								<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Pay Fee Online (SBCollect)</a></li>
+
+
+
+
+<!--							    <li><a href="FeeRevisionNotice(2021-2022).pdf" target="_blank">Revision of Fee for Session 2021-22</a></li>-->
+
+
+</ul>
+
+
+
+
+<ul id="ddsubmenu6" class="ddsubmenustyle">
+
+
+
+<!--
+<li><a href="FINAL_RESULT_FOR_ADMISSION_TO_CLASS_XI_IN_OAK_GROVE_SCHOOL_FOR_SESSION_2023-24.pdf" target="_blank">FINAL RESULT FOR ADMISSION TO CLASS XI IN OAK GROVE SCHOOL FOR SESSION 2023-24</a></li>
+
+
+
+<li><a href="CLASSXI_INTERNET_RESULT_PDF_Signed.pdf" target="_blank">RESULT OF WRITTEN TEST HELD ON 2ND APRIL 2023 FOR ADMISSION IN CLASS-XI IN OAK GROVE SCHOOL, JHARIPANI FOR
+THE ACADEMIC SESSION 2023-24</a></li>-->
+
+<!--<li><a href="final_result.pdf" target="_blank">Final Result of General Manager Quota for Admission in Oak Grove School for Session 2023-2024</a></li>
+ 
+<li><a href="FINAL_RESULT_OF_OTHER_CLASSES_PDF_Signed.pdf" target="_blank">Final Result for Admission to Classes IV to IX in Oak Grove School for Session 2023-2024
+</a></li>
+ 
+
+<li><a href="FINAL_RESULT_OF_CLASSIIIPDF_Signed.pdf" target="_blank">Final Result for Admission to Class III in Oak Grove School for Session 2023-2024
+FOR THE SESSION 2023-24</a></li>
+
+
+<li><a href="Adobe_Scan_13_Mar_2023.pdf" target="_blank">Supplementary Result of written test for admission to class 9 SESSION 2023-2024</a></li>
+
+
+<li><a href="RESULT_OF_OGS_ADMISSION_TEST_HELD_ON_29-01-23.pdf" target="_blank">Result of written test for admission to class 3 to 9 (Session 2023-24)</a></li>-->
+
+<li><a href="Information_Brochure.pdf" target="_blank">Information Brochure</a></li>
+<!--<li><a href="ADMISSION_NOTICE_FOR_CLASS-XI_(SESSION_2023-24).pdf" target="_blank">Admission Notification for class 11 (Session 2023-24)</a></li>
+
+
+<li><a href="GM_Quota_Final_Signed.pdf" target="_blank">List of Selected Candidates against GM Quota for class XI  Academic Session 2022-23 </a></li>-->
+
+
+						
+<!--						<li><a href="Final Result_Signed.pdf" target="_blank">Final Result of Class XI Admission Session 2022-23</a></li>-->
+						
+						
+						
+						
+<!--					<li><a href="ADMISSION NOTICE CLASS XI FOR SESSION 2022-2023.pdf" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>-->
+
+
+
+
+
+
+
+
+								
+								
+							<!--	<li><a href="ClassIII2022-2023EXAMPAPER.pdf" target="_blank">Class III 2022-2023 Exam Paper</a></li>
+								
+								
+								<li><a href="Questionpaper.pdf" target="_blank">Question paper of class III for session 2021</a></li>
+
+
+								<li><a href="download.php" target="_blank">Old Question Paper</a></li>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!--<li><a href="Final Result_Signed.pdf" target="_blank">Final Result of Class XI Admission Session 2022-23</a></li>
+
+<li><a href="ADMISSION NOTICE CLASS XI FOR SESSION 2022-2023.pdf" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>
+-->
+
+
+
+
+
+
+
+
+
+<!--<li><a href="formsam2/appliclosed.php">Part-I Application Form</a></li>-->
+
+
+
+<!--<li><a href="formsam2/index.php">Part-I Application Form</a></li>-->
+<!--<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Part-II Make Payment</a></li>
+<li><a href="formsam2/paymentdet.php">Part-III Enter Payment Details</a></li>-->
+<!--<li><a href="formsam2/regstat.php">Check Application Status</a></li>-->
+							
+<!--<li><a href="formsam2/downloadadmitcard.php">Download Admit Card</a></li>-->
+
+<!--USE THIS FINAL 22 sept 2024<li><a href="formsam2/regstat1.php">Download Admit Card</a></li>-->
+<!--<li><a href="FinalListofCandidates.pdf" target="_blank">Final List of candidates appearing in the admission entrance exam(2023-24) to be held on 29-01-2023</a></li>-->
+
+
+
+
+
+<li><a href="download.html">Download Entrance Exam Question Papers</a></li>
+
+
+<!--<li><a href="#" target="_blank">Admission Notice for class XI in OAK GROVE SCHOOL Session(2022-23)</a></li>
+
+						
+						
+			<li><a href="Notice No. 13_2022_Signed.pdf" target="_blank">Final Revision of Fee for the class 3 to 9 for Session 2021-22</font></a></li>
+						
+						<li><a href="CLASS 3 ADMISSION TEST NOTICE NO.8 2022.pdf" target="_blank">
+Announcement of Date of Entrance Examination Class 3rd Session 2022-2023</font></a></li>
+						<li><a href="List of Candidates for Entrance Exam Class III (Session 2022-2023).pdf" target="_blank">List of Candidates for Entrance Exam Class III (Session 2022-2023)</a></li>-->
+						
+						
+						
+						
+			<!--<li><a href="FINALresult4to9.pdf" target="_blank">Final Result of other Classes IV to IX for admission in Oak Grove School Jharipani for Session 2021-22</a></li>
+
+						
+<li><a href="FINALRESULT.pdf" target="_blank">Final Result of Class III for Admission in OAK GROVE SCHOOL JHARIPANI for the Session  2021-22</a></li>-->
+	
+<!-- THIS IS FINAL--> <!--<li><a href="formsam2/index.php">Part-I Application Form</a></li>-->
+
+<!--<li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Part-II Make Payment</a></li>
+
+<li><a href="formsam2/paymentdet.php">Part-III Enter Payment Details</a></li>-->
+
+<li><a href="formsam2/regstat.html">Check Application Status</a></li>
+							
+							
+	<!-- ORIGINAL  --> <!--<li><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=844392" target="_blank">Part-II Make Payment</a></li>-->
+  
+							
+							
+							
+							
+<li><a href="formsam2/regstat1.html">Download Entrance Exam Admit Card</a></li>
+
+<!--<li><a href="#">Part-I Application Form</a></li>
+
+				<li><a href="#">Part-II Make Payment</a></li>
+				<li><a href="#">Part-III Enter Payment Details</a></li>
+							<li><a href="#">Check Application Status</a></li>
+<li><a href="formsam2/regstat1.php">Download Entrance Exam Admit Card</a></li>-->
+
+
+
+
+
+
+
+
+
+
+								
+<!--<li><a href="#" target="_blank">Entrance Exam Question Papers</a></li>
+<li><a href="#" target="_blank">Class III 2022-2023 Exam Paper</a></li>
+<li><a href="#" target="_blank">Question paper of class III for session 2021</a></li>-->
+		
+
+
+								
+
+
+<!--<li><a href="#">Item 1b</a></li>
+<li><a href="#">Item 2b</a></li>
+<li><a href="#">Item Folder 3b</a>
+  <ul>
+  <li><a href="#">Sub Item 3.1b</a></li>
+  <li><a href="#">Sub Item 3.2b</a></li>
+  <li><a href="#">Sub Item 3.3b</a></li>
+  <li><a href="#">Sub Item 3.4b</a></li>
+  </ul>
+</li>
+<li><a href="#">Item 4b</a></li>
+<li><a href="#">Item Folder 5b</a>
+  <ul>
+  <li><a href="#">Sub Item 5.1b</a></li>
+  <li><a href="#">Item Folder 5.2b</a>
+    <ul>
+    <li><a href="#">Sub Item 5.2.1b</a></li>
+    <li><a href="#">Sub Item 5.2.2b</a></li>
+    <li><a href="#">Sub Item 5.2.3b</a></li>
+    </ul>
+  </li>
+	</ul>
+</li>
+<li><a href="#">Item 6b</a></li>-->
+</ul>
+
+
+
+<ul id="ddsubmenu7" class="ddsubmenustyle">
+<li><a href="howtoreach.html">How to reach</a></li>
+								<!--<li><a href="vacancy.php">Vacancy</a></li>-->
+								
+								<li><a href="contact.html">Contact/Feedback</a></li>
+								<li><a href="otherdownloads.html">Other Downloads</a></li>
+
+								
+<!--								<li><a href="download.php">Download</a></li>-->
+								
+
+
+
+
+</ul>
+
+
+
+<ul id="ddsubmenu8" class="ddsubmenustyle">
+	
+		<!--<li><a href="Integrated_Security_Solutions_in_Voice_Implied_Broadcasting.pdf" target="_blank">Invite quotation for Integrated Security Solutions in Voice Implied Broadcasting in Oak Grove School</a></li>-->
+
+		<!--<li><a href="tenders/TenderNotice.pdf" target="_blank">Tenders Notice</a></li>-->
+		<li><a href="QuotationStationery2025-26.pdf" target="_blank">Quotation Notice for supply of Text Books, Note Books & Stationery Items for the session 2025-26</a></li>
+
+<li><a href="https://nr.indianrailways.gov.in/Tender_cpp.jsp?lang=0&amp;id=0,3" target="_blank">Current Tenders</a></li>
+</ul>
+
+
+
+<ul id="ddsubmenu9" class="ddsubmenustyle">
+
+						<li><a href="pressrelease.html">Press Release</a></li>
+
+
+</ul>
+
+
+
+<ul id="ddsubmenu10" class="ddsubmenustyle">
+
+						<li><a href="tc.html">TC Issued</a></li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+<!-- end of new menu bar-->
+
+<!--w3l-header-->
+
+<header class="w3l-header-nav">  
+</div>
+
+<!-- line no in css  9823-->
+
+
+
+
+
+
+
+	<!--/nav       Check line at assets/css/sty;estarter line 3145 for gap logo and red maroon heading bar-->
+	<nav class="navbar navbar-expand-lg fill px-lg-0 py-0 px-3">      
+		<div class="container">
+		<!--	<a class="navbar-brand" href="index.html">Oak Grove<span>School</span></a>-->
+			<!-- if logo is image enable this  --> 
+						<a class="navbar-brand" href="index-2.html">
+<!--							<img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:35px;" />-->
+
+<!--  ORIGINAL 6SEPT 2022 <img src="assets/images/logo.png" alt="Your logo" title="Your logo" style="height:65px;" />						</a> -->
+
+
+<img src="assets/images/logo.png" alt="Your logo" title="Your logo" class="img-thumbnailhomelogo" />	
+
+
+
+
+
+
+
+
+
+	<!---->		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+
+                </ul>
+                <!--/search-right-->
+				
+				<!--//search-right-->
+				
+				<div class="box-support">
+				
+				<p><a href="http://www.indianrailways.gov.in/" target="_blank"><img src="images/logorail.png" /></a>
+				<a href="http://cbse.nic.in/newsite/index.html" target="_blank"><img src="images/logocbse.png" /></a>
+				
+				
+				
+					<span class="fa fa-headphones"></span>
+					<h565>0135-2630200</h565></p>
+				</div>
+				
+				
+			</div>
+		</div>
+	</nav>
+	<!--//nav-->
+</header>
+<!-- //w3l-header -->
+	
+	
+<!--<section class="w3l-main-slider">-->
+
+<!--  new carousel-->
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+	
+	<!-- code for top scroll-->
+	
+	
+	<!-- end of top scroll-->
+	
+</head>
+<body>
+
+
+<!-- http://www.dynamicdrive.com/dynamicindex2/crawler/index.htm  crawler-->
+
+
+
+
+
+
+
+
+
+
+<!--   marquee-->
+
+	
+	
+	<marquee bgcolor="#510000" behavior="scroll" direction="left" onMouseOver="this.stop();" onMouseOut="this.start();" style="margin-bottom:-9px">
+	
+
+									   <b>
+									   
+									   <a href="scrolllink/1744182779.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743406145result31march2025.pdf" target="_blank">
+<font color="#F1EB5D">FINAL RESULT FOR ADMISSION IN CLASS XI (SESSION 2025-2026)</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743166170Notice%2012.pdf" target="_blank">
+<font color="#F1EB5D">SCHEDULE OF VACATION FOR THE ACADEMIC SESSION 2025-26</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1742927500waitinglist.pdf" target="_blank">
+<font color="#F1EB5D">WAITING LIST OF CANDIDATES FOR ADMISSION TO CLASS III & CLASS VI IN OAK GROVE SCHOOL, JHARIPANI FOR THE SESSION 2025-26</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743512993.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743513019.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1741223464Quotation%20notice%20for%20hiring%20of%20security%20service%20in%20Oak%20Grove%20School.pdf" target="_blank">
+<font color="#F1EB5D">Quotation notice for hiring of security service in Oak Grove School</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743513034.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743513198.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1743513214.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1740016335immunizationandrecordform.pdf" target="_blank">
+<font color="#F1EB5D">Proforma of Record Form-cum-Immunization-Schedule</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1740016222railempcert.jpg" target="_blank">
+<font color="#F1EB5D">Proforma for Railway Employee Certificate</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1740844046.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1740844057.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1739794465.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1740844067.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1739537997.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1739538017.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1724893872.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1724893882.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1721754445.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1721754196.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1721754223.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1721754252.html" target="_blank">
+<font color="#F1EB5D"></font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/1706664086ICNA.pdf" target="_blank">
+<font color="#F1EB5D">INCA National Map Quiz 2023 winners OAK GROVE SCHOOL 3rd Position</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 									   <b>
+									   
+									   <a href="scrolllink/A%20letter%20of%20Appreciation%20-%20CBSE1704936733appreciationletter_CBSE.jpg" target="_blank">
+<font color="#F1EB5D">A letter of Appreciation - CBSE</font></a></b> &nbsp;
+&nbsp;&nbsp;
+									 
+
+
+
+ 	
+
+	<!--<b><a href="INCANATIONALMAPQUIZ20223WINNERS.pdf" target="_blank">
+<font color="#F1EB5D">INCA National Map Quiz 2023 winners OAK GROVE SCHOOL 3rd Position</font></a></b> &nbsp;
+&nbsp;&nbsp;
+	
+	<b><a href="WinterVacationNotice2023-24.pdf" target="_blank">
+<font color="#F1EB5D">Winter Vacation Notice 2023-24</font></a></b> &nbsp;
+&nbsp;&nbsp;
+	
+	
+	
+	<b><a href="ADMISSIONNOTICEFORCLASSIIISESSION2O24-2O25.pdf" target="_blank">
+<font color="#F1EB5D">Admission Notice for Class III Session 2024-25 </font></a></b> &nbsp;
+&nbsp;&nbsp;
+	
+	
+	<b><a href="Noticeno19.pdf" target="_blank">
+<font color="#F1EB5D">Schedule for reporting after winter vacation in the academic session 2023-24
+2023-24</font></a></b> &nbsp;
+&nbsp;&nbsp;
+
+
+ 
+ <b><a href="appreciationletter_CBSE.jpg" target="_blank">
+<font color="#F1EB5D">A letter of Appreciation - CBSE
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+-->
+
+
+	<!--
+<b><a href="Noticeno18.pdf" target="_blank">
+<font color="#F1EB5D">Commencement of Winter Vacation for Academic Session 2023-24
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	<b><a href="empnotice.jpg" target="_blank">
+<font color="#F1EB5D">Employment Notice
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+ 
+ 
+	-->
+		
+	
+	
+	
+	<!--
+	
+		<b><a href="NOTICEOFSUMMERVACATION.pdf" target="_blank">
+<font color="#F1EB5D">Schedule for reporting after summer vacation in the academic session
+2023-24</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="Doc_25april2023.pdf" target="_blank">
+<font color="#F1EB5D">Quotation for 135 IP and other CCTV cameras</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="FINAL_RESULT_FOR_ADMISSION_TO_CLASS_XI_IN_OAK_GROVE_SCHOOL_FOR_SESSION_2023-24.pdf" target="_blank">
+<font color="#F1EB5D">FINAL RESULT FOR ADMISSION TO CLASS XI IN OAK GROVE SCHOOL FOR SESSION 2023-24
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="CLASSXI_INTERNET_RESULT_PDF_Signed.pdf" target="_blank">
+<font color="#F1EB5D">RESULT OF WRITTEN TEST HELD ON 2ND APRIL 2023 FOR ADMISSION IN CLASS-XI IN OAK GROVE SCHOOL, JHARIPANI FOR THE ACADEMIC SESSION 2023-24
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;-->
+	
+	<!--
+	
+	
+	<b><a href="OGS_Fixture_Card_2023.pdf" target="_blank">
+<font color="#F1EB5D">School Calendar (2023-2024)
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	<b><a href="final_result.pdf" target="_blank">
+<font color="#F1EB5D">Final Result of General Manager Quota for Admission in Oak Grove School for Session 2023-2024</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="formsam2/regstat1.php" target="_blank">
+<font color="#F1EB5D">Download Admit Card</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="FINAL_RESULT_OF_OTHER_CLASSES_PDF_Signed.pdf" target="_blank">
+<font color="#F1EB5D">Final Result for Admission to Classes IV to IX in Oak Grove School for Session 2023-2024</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	
+	<b><a href="FINAL_RESULT_OF_CLASSIIIPDF_Signed.pdf" target="_blank">
+<font color="#F1EB5D">Final Result for Admission to Class III in Oak Grove School for Session 2023-2024</font></a></b> &nbsp;
+ &nbsp;&nbsp;-->
+	
+	<!--
+	<b><a href="Employment_Notice_for_Engagement_of_Contractual_Teachers_in_OGS.pdf" target="_blank">
+<font color="#F1EB5D">Employment Notice for Engagement of Contractual Teachers in OGS</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	<b><a href="Adobe_Scan_13_Mar_2023.pdf" target="_blank">
+<font color="#F1EB5D">Supplementary Result of written test for admission to class 9 SESSION 2023-2024</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	<b><a href="RESULT_OF_OGS_ADMISSION_TEST_HELD_ON_29-01-23.pdf" target="_blank">
+<font color="#F1EB5D">Result of written test for Admission to class III to IX held on 29 Jan 2023(Academic Session 2023-24)</font></a></b> &nbsp;
+ &nbsp;&nbsp;-->
+	<!--
+	<b><a href="ADMISSION_NOTICE_FOR_CLASS-XI_(SESSION_2023-24).pdf" target="_blank">
+<font color="#F1EB5D">Admission Notification for class 11 (Session 2023-24)</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+
+	
+	<b><a href="Quotation_notice.pdf" target="_blank">
+<font color="#F1EB5D">Quotation notice for supply of Text Books, note books & stationery for Oak Grove School, Mussoorie for the session 2023-24</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	-->
+	
+	
+	<!--<b><a href="https://oakgrovejharipani.in/formsam2/regstat1.php" target="_blank">
+<font color="#F1EB5D">Download Admit Card</font></a></b> &nbsp;
+ &nbsp;&nbsp;-->
+	<!--
+	<b><a href="Notice_01_2023.pdf" target="_blank">
+<font color="#F1EB5D">Reporting of Students in School after winter Vacations and intimation about important Academic activities</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	
+	
+	<b><a href="FinalListofCandidates.pdf" target="_blank">
+<font color="#F1EB5D">Final List of candidates appearing in the admission entrance exam(2023-24) to be held on 29-01-2023</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+
+
+
+
+
+
+
+<b><a href="ADMISSION_NOTICE_CLASS_III_TO_IX.pdf" target="_blank">
+<font color="#F1EB5D">Notification for admission in Classes 3rd to 9th in Oak Grove School,Jharipani for the academic session 2023-24 has been issued.</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+-->
+
+
+
+<!--
+<b><a href="Question_Papers_of_Class_XI_Session_2022-23.pdf" target="_blank">
+<font color="#F1EB5D">Question Papers of Class XI Session 2022-23</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+
+-->
+
+
+	<!--
+	<b><a href="ClassIII2022-2023EXAMPAPER.pdf" target="_blank">
+<font color="#F1EB5D">Class III 2022-2023 Exam Paper</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+-->
+
+
+
+	<!--
+	
+	<b><a href="ClassIII2022-2023EXAMPAPER.pdf" target="_blank">
+<font color="#F1EB5D">Class III 2022-2023 Exam Paper</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+-->
+	
+	
+	
+	
+	
+
+		
+	
+	
+		
+		
+		
+<!--
+	<b>
+<font color="#F1EB5D"><a href="School_Fee_Revision_III_IV_Signed.pdf" target="_blank">School Fee Revision for class III - IV session 2022-2023 
+</a>
+</font></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	-->
+	
+	
+	
+	
+	
+	
+ 
+ 
+
+ 
+ 
+ <!--
+	
+	
+	
+	
+	<b><a href="Document52.pdf" target="_blank">
+<font color="#F1EB5D">Extension of last day of deposit of the 1st installment of School fee
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<!--
+<font color="#FFFF00">
+<a href="School_Fee_Revision_III_IV_Signed.pdf" target="_blank">School Fee Revision for class III - IV session 2022-2023 </a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	 <b><a href="OGSFixtureCard2022.pdf" target="_blank">
+<font color="#FFFF00">School Calendar Oak Grove School(2022-2023)
+</font></a></b>
+	
+	
+	&nbsp;&nbsp;
+	
+	<b><a href="Document52.pdf" target="_blank">
+<font color="#FFFF00">Extension of last day of deposit of the 1st installment of School fee
+</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+	
+	
+	<b><a href="Notice16march2021.pdf" target="_blank">
+<font color="#FFFF00">Vaccination of Students in age 12 to 14 years prior to joining</font></a></b> &nbsp;
+ &nbsp;&nbsp;
+
+
+<b><a href="appreciationletter_CBSE.jpg" target="_blank">A letter of Appreciation - CBSE</a></b> &nbsp;
+ &nbsp;  &nbsp;		
+
+
+-->
+                                                                    </marquee>
+
+
+
+
+
+
+<!-- end ppf marquee-->
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Composer -->
+    <!-- Source: https://www.jssor.com/demos/full-width-slider.slider/=edit -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,ls:0.5},{b:0,d:1000,y:5,e:{y:6}}],
+              [{b:-1,d:1,ls:0.5},{b:200,d:1000,y:25,e:{y:6}}],
+              [{b:-1,d:1,ls:0.5},{b:400,d:1000,y:45,e:{y:6}}],
+              [{b:-1,d:1,ls:0.5},{b:600,d:1000,y:65,e:{y:6}}],
+              [{b:-1,d:1,ls:0.5},{b:800,d:1000,y:85,e:{y:6}}],
+              [{b:-1,d:1,ls:0.5},{b:500,d:1000,y:195,e:{y:6}}],
+              [{b:0,d:2000,y:30,e:{y:3}}],
+              [{b:-1,d:1,rY:-15,tZ:100},{b:0,d:1500,y:30,o:1,e:{y:3}}],
+              [{b:-1,d:1,rY:-15,tZ:-100},{b:0,d:1500,y:100,o:0.8,e:{y:3}}],
+              [{b:500,d:1500,o:1}],
+              [{b:0,d:1000,y:380,e:{y:6}}],
+              [{b:300,d:1000,x:80,e:{x:6}}],
+              [{b:300,d:1000,x:330,e:{x:6}}],
+              [{b:-1,d:1,r:-110,sX:5,sY:5},{b:0,d:2000,o:1,r:-20,sX:1,sY:1,e:{o:6,r:6,sX:6,sY:6}}],
+              [{b:0,d:600,x:150,o:0.5,e:{x:6}}],
+              [{b:0,d:600,x:1140,o:0.6,e:{x:6}}],
+              [{b:-1,d:1,sX:5,sY:5},{b:600,d:600,o:1,sX:1,sY:1,e:{sX:3,sY:3}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $LazyLoading: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 20,
+                $SpacingY: 20
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1600;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&amp;subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    
+	
+	
+	<style>
+        /* jssor slider loading skin spin css */
+		
+		
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /*jssor slider bullet skin 132 css*/
+        .jssorb132 {position:absolute;}
+        .jssorb132 .i {position:absolute;cursor:pointer;}
+        .jssorb132 .i .b {fill:#fff;fill-opacity:0.8;stroke:#000;stroke-width:1600;stroke-miterlimit:10;stroke-opacity:0.7;}
+        .jssorb132 .i:hover .b {fill:#000;fill-opacity:.7;stroke:#fff;stroke-width:2000;stroke-opacity:0.8;}
+        .jssorb132 .iav .b {fill:#000;stroke:#fff;stroke-width:2400;fill-opacity:0.8;stroke-opacity:1;}
+        .jssorb132 .i.idn {opacity:0.3;}
+
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    
+	
+	<svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+        <defs>
+            <filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="4"></feGaussianBlur>
+            </filter>
+            <radialGradient id="jssor_1_grd_2">
+                <stop offset="0" stop-color="#fff"></stop>
+                <stop offset="1" stop-color="#000"></stop>
+            </radialGradient>
+            <mask id="jssor_1_msk_3">
+                <path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+            </mask>
+        </defs>
+    </svg>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+<!--            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />-->
+        </div>
+        
+		
+		
+		
+		
+		
+		
+		
+		<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
+
+
+
+
+            <div style="background-color:#d3890e;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov1.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov2.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov3.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov4.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov5.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov6.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov7.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov8.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov9.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+        
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov10.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+
+
+
+        
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov11.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+
+
+
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov12.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+
+       
+        
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov13.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+
+
+
+
+
+
+
+<img data-u="image" style="opacity:10.8;" data-src="img/nov14.jpg" />
+                <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
+                    <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="2" style="left:50px;top:560px;width:400px;height:100px;position:absolute;opacity:0.25;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="3" style="left:50px;top:580px;width:400px;height:100px;position:absolute;opacity:0.125;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="4" style="left:50px;top:600px;width:400px;height:100px;position:absolute;opacity:0.06;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--OAK--></div>
+                    <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;"><!--GROVIANS--></div>
+                </div>
+            </div>
+            <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		  
+            </div>
+        
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+	
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+            
+		
+		
+		
+            
+			
+		
+			
+			
+			
+			
+			
+		
+			
+		
+			
+			
+			
+	
+			
+			
+			
+		
+			
+			
+			
+			
+        </div><a data-scale="0" href="https://www.jssor.com/" style="display:none;position:absolute;"><!--slider html--></a>
+        <!-- Bullet Navigator -->
+        
+		
+		
+		
+		
+		
+		<div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+           <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- beginning of scroller marquee-->
+	
+	
+	
+<!-- beginning of scroller marquee-->
+	
+</body>
+
+<!-- Mirrored by HTTrack Website Copier/3.x [XR/YP'2000] -->
+</html>
+ 
+
+<!-- end of new carousel-->
+
+
+
+  <!-- main-slider -->
+  <!--<div class="companies20-content">
+    <div class="companies-wrapper">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Building Block for any Scholar</h3>
+                
+                <a href="about.html" class="btn btn-primary btn-style ml-2">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info  banner-view banner-top2">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Flooring for any Scholar</h3>
+               
+                <a href="about.html" class="btn btn-primary btn-style ml-2">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view banner-top1">
+              <div class="banner-info container">
+                <h5 class="banner-text">Ranked as No. 1 Government Boarding School</h5>
+                <h3 class="banner-text">Professionals you can rely on</h3>
+               <a href="about.html" class="btn btn-primary btn-style">Explore More</a>
+                <a href="contact.html" class="btn transparent-btn btn-style ml-2">Contact Us</a>              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>-->
+  <!-- /main-slider -->
+<!--</section>-->
+<section class="w3l-about" id="about">
+  <div class="new-block py-5">
+    <div class="container py-lg-5 py-md-4">
+      <div class="row middle-section">
+        <div class="col-lg-6 section-width align-self">
+            <h100>Oak Grove School - A legacy of 138 Years</h100>
+          <!--<h2></h2>-->
+		  
+		  <!--  check .row p for this paragraph line5771-->
+            <p class="mt-4 pb-3">Oak Grove School, the first Railway hill school, was started in 1870 by the erstwhile Sindh,Punjab and Delhi(SPD) 
+			Railway which later came to be known as North western Railway at a bungalow called 'Fairlawn' which was part of the Rajah of Nepal's estate 
+			and close to the place where Oak Grove School is now located. The Fairlawn school was merged 
+			with the Oak Grove School in 1894 as the number of students had increased and there was a dearth of staff to manage the school.
+			Oak Grove School started with only 28 students on its rolls and at present more than 600 students...</p>
+			
+          <a href="history.html" class="btn btn-outline-primary btn-outline-style mt-4">Know more about us</a>        </div>
+          <div class="col-lg-6 history-info mt-lg-0 mt-5 pt-lg-0 pt-md-4">
+          <div class="position-relative img-border">
+           
+<!--		   <iframe width="560" height="315" src="https://www.youtube.com/embed/byXcMVyegc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+
+<!--   this is original-->
+<!--<iframe width="500" height="315" src="https://www.youtube.com/embed/byXcMVyegc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+<!-- end of otriginal -->
+		   
+	   <div class="videoWrapper">
+<iframe  width="500" height="315" src="https://www.youtube.com/embed/byXcMVyegc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>	   
+		   
+		   
+		   <!-- this is original <img src="assets/images/about.jpg" class="img-fluid video-popup-image" alt="video-popup">-->
+		   
+		   
+		  <!-- <video  autoplay class="img-fluid video-popup-image" alt="video-popup">
+  <source src="ogsvideo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>-->
+            
+         <!--   <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center position-absolute">-->
+
+<!--<a href="#" class="popup-with-zoom-anim play-view text-center position-absolute">
+              <span class="video-play-icon">
+                <span class="fa fa-play"></span>              </span>            </a>-->
+
+            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+            <!--<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe src="https://www.youtube.com/embed/1wEKS6nTsS0" allowfullscreen></iframe>
+            </div>-->
+          </div>
+        </div>
+
+        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <iframe src="https://www.youtube.com/embed/Z_KspIX1oXU" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- home page service grids -->
+<section id="services" class="home-services py-5"> <!-- homeservices -->
+
+  <div class="container py-lg-5 py-md-4">
+      <h33 class="title-big">About</h33>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        
+		
+		<div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-pencil-square-o"></span>          
+		  </div>
+			
+<!--          <h4 class="number">01</h4>-->
+          <h4><a href="pcpomessage.html">PCPO Message</a></h4>
+		                       <a href="pcpomessage.html"><img src="assets/images/pcponew2.jpg" alt=""/></a>		     
+
+          <!--<p>Eminent Educationist, thinker and ex President of India, Dr. S. Radhakrishnan, once remarked "School is the place where silent social revolution is always"....-->
+	  
+		  <!-- end of scroller-->
+		  
+           <!--<a href="pcpomessage.php" class="read">Read</a>-->
+        </div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-pencil-square-o"></span>          </div>
+          <!--<h4 class="number">02</h4>-->
+          <h4><a href="principalmessage.html">Principal Message</a></h4>
+          <!--<p>This school has a glorious tradition of 133 years and it is now ready to transform itself to an institution of modern times. The real challenge ....</p>-->
+		                       <a href="principalmessage.html"><img src="assets/images/g3.jpg" alt=""/>		     </a>
+
+           <!-- <a href="principalmessage.php" class="read">Read</a>  -->      </div>
+      </div>
+     
+	 
+	 
+	 
+	  <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-pencil-square-o"></span>          </div>
+<!--          <h4 class="number">03</h4>-->
+          
+
+
+<h4><a href="latestnews.html">News Bulletin</a></h4>
+          <!--<p>In the 19th century Companies and Industrial concerns were mainly driven by profit motive and rarely invested in areas of social concern like...</p>-->
+		  
+<!--	  <div id="pscroller1" class="pausescroller"></div>-->
+
+
+<marquee bgcolor="#510000" behavior="scroll" direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" style="margin-bottom:-20px" scrollmount="3">
+
+
+<!--<section class="w3l-main-slider">-->
+
+<!--  new carousel-->
+
+<!-- end of new carousel-->
+
+
+
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+	
+	<!-- code for top scroll-->
+	
+	
+	<!-- end of top scroll-->
+	
+</head>
+<body>
+
+
+
+
+<!--   marquee-->
+
+	
+	
+<!--	<marquee bgcolor="#510000" behavior="scroll" direction="left" onMouseOver="this.stop();" onMouseOut="this.start();" style="margin-bottom:-9px">-->
+	
+
+									   <b>
+									   
+									   <a href="scrolllink/1744182779.html" target="_blank">
+<font color="#F1EB5D"></font></a></b><br />
+
+									 									   <b>
+									   
+									   <a href="scrolllink/1743406145result31march2025.pdf" target="_blank">
+<font color="#F1EB5D">FINAL RESULT FOR ADMISSION IN CLASS XI (SESSION 2025-2026)</font></a></b><br />
+
+									  	
+		
+		
+
+                                                <!-- </marquee>-->
+
+
+
+
+</body>
+</html>
+
+
+
+
+<!--
+
+<a href="formsam2/regstat1.php" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">1.
+Class III Admit Card will be issued on 17th January 2024 onwards </font>
+</a> <br>
+
+
+<a href="INCANATIONALMAPQUIZ20223WINNERS.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2.
+INCA National Map Quiz 2023 winners OAK GROVE SCHOOL 3rd Position</font>
+</a> <br>
+
+
+-->
+
+
+
+
+
+
+
+<!--
+
+<a href="WinterVacationNotice2023-24.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2.
+Winter Vacation Notice 2023-24</font>
+</a> <br>
+
+
+<!--
+
+<a href="ADMISSIONNOTICEFORCLASSIIISESSION2O24-2O25.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">3. Admission Notice for Class III Session 2024-25</font>
+</a> <br>
+
+
+
+
+
+
+
+
+
+
+<a href="Noticeno19.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2. Schedule for reporting after winter vacation in the academic session 2023-24</font>
+</a> <br>
+
+
+<a href="formsam2/regstat1.php" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2. Download Admit Card</font>
+</a> <br>
+
+-->
+<!--
+<a href="FINAL_RESULT_OF_OTHER_CLASSES_PDF_Signed.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2. Final Result for Admission to Classes IV to IX in Oak Grove School for Session 2023-2024</font>
+</a> <br>
+-->
+<!--
+<a href="FINAL_RESULT_OF_OTHER_CLASSES_PDF_Signed.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">3. Final Result for Admission to Classes IV to IX in Oak Grove School for Session 2023-2024</font>
+</a> <br>-->
+
+
+
+<!--<a href="FINAL_RESULT_OF_CLASSIIIPDF_Signed.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">4. Final Result for Admission to Class III in Oak Grove School for Session 2023-2024</font>
+</a> -->
+<!--
+<a href="Employment_Notice_for_Engagement_of_Contractual_Teachers_in_OGS.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">3. Employment Notice for Engagement of Contractual Teachers in OGS</font>
+</a>
+
+<a href="Adobe_Scan_13_Mar_2023.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">3. Supplementary Result of written test for admission to class 9 SESSION 2023-2024</font>
+</a>
+
+
+	
+		
+		<a href="ADMISSION_NOTICE_CLASS_III_TO_IX.pdf" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">1. Notification for admission in Classes 3rd to 9th in Oak Grove School, Jharipani for the academic session 2023-24 has been issued.</font>
+</a><br>-->
+	
+	
+<!--<a href="class10result2021-22.jpg" target="_blank"><font color="#EFE710" size="3px" weight="normal" style="font-family:Arial;">2. Class 10 result 2021-22</font>
+</a>
+	
+<br>	
+
+<a href="class12result2021-22.jpg" target="_blank"><font color="#EFE710" weight="normal" style="font-family:Arial;">3. Class 12 result 2021-22</font>
+</a>-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--
+	<a href="ClassIII2022-2023EXAMPAPER.pdf" target="_blank"><font color="#EFE710" size="3px"><b>2. Class III 2022-2023 Exam Paper</b></font>
+</a>
+	
+<br>	
+<a href="GM_Quota_Final_Signed.pdf" target="_blank"><font color="#EFE710" size="3px"><b>2. List of Selected Candidates against GM Quota for class 11 Academic Session 2022-23</b></font>
+</a>
+ 
+	<br>
+-->	
+	<!--
+	<a href="Document52.pdf" target="_blank"><font color="#EFE710" size="3px"><b>3. Extension of last day of deposit of 1st installment of school fee</b></font></a>
+ 
+	<br> 	
+		
+	<a href="Notice16march2021.pdf"><font color="#EFE710" size="3px"><b>Vaccination of Students in age 12 to 14 years prior to joining</b></font></a>
+ 
+	
+	<br>
+	
+	<a href="appreciationletter_CBSE.jpg"><font color="#EFE710" size="3px"><b>A letter of Appreciation - CBSE</b></font></a>
+ 
+	
+	<br>
+	-->
+	
+	
+<br><br><br>
+
+
+                                                                    </marquee>
+
+
+
+
+
+
+<!--<div id="pscroller2" class="pausescroller"></div>-->
+
+<!--
+<script type="text/javascript">
+
+
+
+var scroller1 = new pausescroller(pausecontent, "pscroller1", 800, 1500)
+
+
+
+</script>
+-->
+<!--<p>
+<button onClick="scroller1.pause()">Pause Scroller 1</button> 
+<button onClick="scroller1.resume()">Resume Scroller 1</button> 
+<button onClick="scroller1.populate(pausecontent2)">Populate Scroller 1 w/ Scroller 2 contents</button>
+</p>-->
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+            <!--<a href="latestnews.php" class="read">Read</a>   -->     </div>
+      </div>
+      <!--<div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-home"></span>          </div>
+          <h4 class="number">04</h4>
+          <h4><a href="#url">Vision</a></h4>
+          <p>Which was mainly left to Religious and Philanthropic Institutions.It was therefore quite creditable on the part...</p>
+            <a href="#read" class="read">Read more</a>        </div>
+      </div>-->
+      <!--<div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-bath"></span>          </div>
+          <h4 class="number">05</h4>
+          <h4><a href="#url">School Motto</a></h4>
+          <p>The proposal soon took concrete shape and the school started functioning from 1st of June 1888...</p>
+            <a href="#read" class="read">Read more</a>        </div>
+      </div>
+      -->
+	  
+	  
+	  <!--<div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-picture-o"></span>          </div>
+          <h4 class="number">06</h4>
+          <h4><a href="#url">School Song</a></h4>
+          <p>The Fairlawn school was merged to Oak Grove in 1894 as it could not survive the birth pangs like shortage of staff...</p>
+            <a href="#read" class="read">Read more</a>        </div>
+      </div>
+    </div>
+  </div>-->
+</section>
+<!-- //home page service grids -->
+<!-- grids -->
+<section class="grids-1 py-5">
+    <div class="grids py-lg-5 py-md-4">
+        <div class="container">
+<!--            <h3 class="title-big">What we do</h3>-->
+<!--            <div class="row text-center grids-gap">-->
+              
+			  
+			  
+			  <div class="row text-center grids-gap">
+              
+			  
+			    <div class="col-lg-3 col-md-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="column"><h4><a href="headmasterboysschool.html">Senior Boys' School</a></h4>
+                        <a href="headmasterboysschool.html"><img src="assets/images/headmaster_boys_school111.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+              
+			  
+			    <div class="col-lg-3 col-md-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="column"><h4><a href="headmasterjuniorschool.html">Junior School</a></h4>
+                        <a href="headmasterjuniorschool.html"><img src="assets/images/junior_school11.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+              
+			  
+			    <div class="col-lg-3 col-md-4 col-sm-6 mt-md-0 mt-4">
+                    <div class="column"><h4><a href="headmistressgirlsschool.html">Senior Girls' School</a></h4>
+                        <a href="headmistressgirlsschool.html"><img src="assets/images/girls_school.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+              
+			  
+			  
+			  
+			    <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-0 mt-4">
+                    <div class="column"><h4><a href="alumni.html">Alumni</a></h4>
+                        <a href="alumni.html"><img src="assets/images/eventshome.jpg" alt="" class="img-responsive" /></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //grids -->
+<section class="w3l-testimonials">
+    <!-- main-slider -->
+    <div class="testimonials py-5">
+        <div class="container py-lg-3">
+                <h3 class="title-big">Gallery</h3>
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <div class="owl-testimonial owl-carousel owl-theme text-center ">
+                        
+						
+						<div class="item">
+                            <div class="slider-info banner-view mt-lg-4 mt-3">
+                                <div class="slider-img-info">
+                                    <!--<h3>Ranked as No. 1 Government Boarding School</h3>-->
+                                    <!--<div class="message">The coffee table Book - " Nurturing Pliable Minds":- Which was under print for quite some time, has come out of the press and is now available for sale. The Book is must have for all as it has an excellent collection of photographs and encapsulates the history of the school and its glorius journery of more then 125 years in shaping the pliable minds of the students.</div>-->
+                                    <a href="gallery.html" class="btn btn-style btn-primary mt-4">Read More</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-info banner-view banner-top1 mt-lg-4 mt-3">
+                                <div class="slider-img-info">
+<!--                                    <h3>Ranked as No. 1 Government Boarding School</h3>-->
+                                    <div class="message"><!--The coffee table Book - " Nurturing Pliable Minds":- Which was under print for quite some time, has come out of the press and is now available for sale. The Book is must have for all as it has an excellent collection of photographs and encapsulates the history of the school and its glorius journery of more then 125 years in shaping the pliable minds of the students.--></div>
+                                    <a href="gallery.html" class="btn btn-style btn-primary mt-4">Read More</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-info banner-view banner-top2 mt-lg-4 mt-3">
+                                <div class="slider-img-info">
+                                   <!-- <h3>Ranked as No. 1 Government Boarding School</h3>-->
+                                    <div class="message"><!--The coffee table Book - " Nurturing Pliable Minds":- Which was under print for quite some time, has come out of the press and is now available for sale. The Book is must have for all as it has an excellent collection of photographs and encapsulates the history of the school and its glorius journery of more then 125 years in shaping the pliable minds of the students.--></div>
+                                    <a href="gallery.html" class="btn btn-style btn-primary mt-4">Read More</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-info banner-view banner-top3 mt-lg-4 mt-3">
+                                <div class="slider-img-info">
+                                   <!-- <h3>Ranked as No. 1 Government Boarding School</h3>-->
+                                    <div class="message"><!--The coffee table Book - " Nurturing Pliable Minds":- Which was under print for quite some time, has come out of the press and is now available for sale. The Book is must have for all as it has an excellent collection of photographs and encapsulates the history of the school and its glorius journery of more then 125 years in shaping the pliable minds of the students.--></div>
+                                    <a href="gallery.html" class="btn btn-style btn-primary mt-4">Read More</a>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  Fun facts section -->
+    <section class="w3l-stats">
+        <div class="main-w3 py-5" id="stats">
+            <div class="container py-lg-3">
+<!--                <h3 class="title-big">Infographic</h3>-->
+                <div class="row main-cont-wthree-fea">
+                    
+					
+					
+					
+<!--					<div class="col-lg-3 col-6 mt-4">-->
+                     <div class="col-lg-3 col-6 mt-sm-4 mt-3">
+	                    <div class="grids-speci1">
+                            <span class="fa fa-building" aria-hidden="true"></span>
+                            <h3 class="title-spe">1:14</h3>
+                            <p>Teacher Student Ratio</p>
+                        </div>
+                    </div>
+                    
+					
+					
+					<!--<div class="col-lg-3 col-6 mt-4">-->
+                  
+				  <div class="col-lg-3 col-6 mt-sm-4 mt-3">
+				        <div class="grids-speci1">
+                            <span class="fa fa-file-text" aria-hidden="true"></span>
+                            <h3 class="title-spe">138</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                  </div>
+                    
+					
+					
+					<div class="col-lg-3 col-6 mt-sm-4 mt-3">
+                        <div class="grids-speci1">
+                            <span class="fa fa-trophy" aria-hidden="true"></span>
+                            <h3 class="title-spe">600</h3>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                    
+					
+					<div class="col-lg-3 col-6 mt-sm-4 mt-3">
+                        <div class="grids-speci1">
+                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                            <h3 class="title-spe">1st Rank</h3>
+                            <p>Govt. Boarding School</p>
+                        </div>
+                    </div>
+                
+				
+				
+				</div>
+
+            </div>
+        </div>
+    </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+     <!--  //Fun facts section -->
+<section class="w3l-footer-29-main">
+  <div class="footer-29 py-5">
+    <div class="container py-lg-4">
+      <div class="row footer-top-29">
+        <div class="footer-list-29 col-lg-4">
+          <h6 class="footer-title-29">About Oak Grove School</h6>
+          <p>This school has a glorious tradition of 138 years and it is now ready to transform itself to an institution of modern times. The real challenge lies in embracing modern technologies without breaking the traditions of the past which is not an easy task.</p>
+          <div class="main-social-footer-29 mt-4">
+            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+           <!-- <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>  -->        
+			</div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1 mt-lg-0 mt-5">
+          <h6 class="footer-title-29">Contact Us</h6>
+          <ul>
+            <li>
+              <p><span class="fa fa-map-marker"></span>Oak Grove School<br>
+Jharipani P.O., Mussoorie Hills,<br>
+District Dehra Dun - 248179<br>
+Uttaranchal, India</p>
+            </li>
+            <li><a href="tel: 0135-2764340"><span class="fa fa-phone"></span> +(91) 0135-2630200</a></li>
+            <li><a href="#" class="mail"><span class="fa fa-envelope-open-o"></span>
+                principalogs.nr@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-lg-0 mt-5">
+
+          <ul>
+            <h6 class="footer-title-29">Useful Links</h6>
+            <li><a href="index-2.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pressrelease.html">Press Release</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+          <h6 class="footer-title-29">Latest from blog</h6>
+          <div class="footer-post mb-4">
+            <a href="#blog-single">Helping you and your child become a better and responsible citizens of India.</a>
+            <p class="small"><span class="fa fa-clock-o"></span> 2nd May, 2022</p>
+          </div>
+          <!--<div class="footer-post">
+            <a href="#blog-single">Helping you and your child become a better and responsible citizens of India.</a>
+            <p class="small"><span class="fa fa-clock-o"></span>2 July, 2021</p>
+          </div>-->
+        </div>
+        <div class="col-lg-12 footer-list-29 footer-4 mt-5">
+          <div class="column1 align-self">
+            <h6 class="footer-title-29 mb-1">Subscribe to our Newsletter </h6>
+            <p>Enter your email and receive the latest news from us.</p>
+          </div>
+          <div class="column1">
+            <form action="#" class="subscribe" method="post">
+              <input type="email" name="email" placeholder="Your Email Address" required="">
+              <button><span class="fa fa-envelope-o"></span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w3l-footer-29-main w3l-copyright">
+  <div class="container">
+    <div class="bottom-copies">
+      <p class="copy-footer-29 text-center">2022 Oak Grove School. All rights reserved. Design by <a
+          href="https://www.ikoninfosystems.com/" target="_blank">
+          Ikon Infosystems</a></p>
+    </div>
+  </div>
+
+  <!-- move top -->
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <button onClick="topFunction()" id="movetop" title="Go to top">
+    &#10548;
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+</section>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- Template JavaScript -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+
+<!----><script src="assets/js/owl.carousel.js"></script>
+
+<!-- script for carousel1 -->
+<script>
+  $(document).ready(function () {
+    $('.owl-one').owlCarousel({
+      loop: false,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script -->
+<!-- script for owlcarousel -->
+<script>
+  $(document).ready(function () {
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        480: {
+          items: 1,
+          nav: false
+        },
+        667: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for owlcarousel -->
+
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

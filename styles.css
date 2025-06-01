@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Header background color */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul > li {
+    display: inline-block; /* Display main menu items inline */
+    position: relative; /* Position for dropdown */
+    margin-right: 15px;
+}
+
+nav ul > li > a {
+    text-decoration: none;
+    color: #ffffff; /* Main menu text color */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav ul > li > a:hover {
+    background-color: #0056b3; /* Hover effect for main menu */
+}
+
+nav ul li ul {
+    display: none; /* Hide sub-menu initially */
+    position: absolute; /* Position sub-menu */
+    background-color: #ffffff; /* Sub-menu background color */
+    border: 1px solid #ccc; /* Sub-menu border */
+    z-index: 1000; /* Ensure sub-menu is above other content */
+    padding: 10px 0; /* Padding for sub-menu */
+    min-width: 200px; /* Minimum width for sub-menu */
+}
+
+nav ul li:hover ul {
+    display: block; /* Show sub-menu on hover */
+}
+
+nav ul li ul li {
+    display: block; /* Display sub-menu items vertically */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li ul li a {
+    color: #333; /* Sub-menu text color */
+    padding: 10px 15px; /* Padding for sub-menu items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make sub-menu items block elements */
+}
+
+nav ul li ul li a:hover {
+    background-color: #f1f1f1; /* Hover effect for sub-menu items */
+}
+
+/* Additional styles for the slider */
+#slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the slider */
+    margin: auto;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide all images initially */
+    position: absolute; /* Position images absolutely */
+    top: 0; /* Align images to the top */
+    left: 0; /* Align images to the left */
+}
+
+#slider img.active {
+    display: block; /* Show the active image */
+}
